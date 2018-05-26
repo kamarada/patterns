@@ -16,13 +16,23 @@ Provides:       pattern-visible()
 #Provides:       pattern-icon() = pattern-kamarada-gnome
 Provides:       pattern-order() = 1012
 
-Requires:       pattern() = enhanced_base
-Requires:       pattern() = x11_enhanced
-Requires:       pattern() = gnome_basis
-
 Requires:       kernel-default
 
-Requires:       gdm
+Requires:       pattern() = enhanced_base
+
+Requires:       pattern() = x11_enhanced
+
+Requires:       pattern() = gnome_basis
+Requires:       MozillaFirefox
+Recommends:     MozillaFirefox-branding-openSUSE
+Requires:       NetworkManager
+Requires:       NetworkManager-applet
+Requires:       gnome-terminal
+Requires:       nautilus
+
+Requires:       pattern() = gnome_utilities
+Requires:       gedit
+Requires:       gnome-calculator
 
 
 %description

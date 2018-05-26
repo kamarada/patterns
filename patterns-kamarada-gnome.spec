@@ -19,6 +19,8 @@ Provides:       pattern-order() = 1012
 Requires:       kernel-default
 
 Requires:       pattern() = enhanced_base
+# host, dig and nslookup
+Requires:       bind-utils
 
 Requires:       pattern() = x11_enhanced
 

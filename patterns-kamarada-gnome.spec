@@ -18,6 +18,8 @@ Provides:       pattern-order() = 1012
 
 Requires:       kernel-default
 
+Recommends:     branding-openSUSE
+
 Requires:       pattern() = enhanced_base
 # dig, host and nslookup
 Requires:       bind-utils
@@ -29,7 +31,11 @@ Requires:       MozillaFirefox
 Recommends:     MozillaFirefox-branding-openSUSE
 Requires:       NetworkManager
 Requires:       NetworkManager-applet
+Recommends:     gdm-branding-openSUSE
 Requires:       gnome-terminal
+Recommends:     gtk2-branding-openSUSE
+Recommends:     gtk3-branding-openSUSE
+Recommends:     hicolor-icon-theme-branding-openSUSE
 Requires:       nautilus
 
 Requires:       pattern() = gnome_utilities

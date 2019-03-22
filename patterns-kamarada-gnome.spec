@@ -40,7 +40,10 @@ Recommends:     gnome-terminal-lang
 Recommends:     gtk2-branding-openSUSE
 Recommends:     gtk3-branding-openSUSE
 Recommends:     hicolor-icon-theme-branding-openSUSE
+
+# kamarada/Linux-Kamarada-GNOME#2 - GUI - Accessories - File manager
 Requires:       nautilus
+Recommends:     nautilus-lang
 
 Requires:       pattern() = gnome_utilities
 Requires:       gedit

@@ -47,7 +47,10 @@ Recommends:     nautilus-lang
 
 Requires:       pattern() = gnome_utilities
 Requires:       gedit
+
+# kamarada/Linux-Kamarada-GNOME#3 - GUI - Accessories - Calculator
 Requires:       gnome-calculator
+Recommends:     gnome-calculator-lang
 
 
 %description

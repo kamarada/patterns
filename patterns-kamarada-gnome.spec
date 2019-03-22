@@ -32,7 +32,11 @@ Recommends:     MozillaFirefox-branding-openSUSE
 Requires:       NetworkManager
 Requires:       NetworkManager-applet
 Recommends:     gdm-branding-openSUSE
+
+# kamarada/Linux-Kamarada-GNOME#1 - GUI - System - Terminal
 Requires:       gnome-terminal
+Recommends:     gnome-terminal-lang
+
 Recommends:     gtk2-branding-openSUSE
 Recommends:     gtk3-branding-openSUSE
 Recommends:     hicolor-icon-theme-branding-openSUSE

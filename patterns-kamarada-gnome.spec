@@ -51,6 +51,10 @@ Recommends:     nautilus-lang
 Requires:       file-roller
 Recommends:     file-roller-lang
 
+# kamarada/Linux-Kamarada-GNOME#9 - GUI - Utilities - System monitor
+Requires:       gnome-system-monitor
+Recommends:     gnome-system-monitor-lang
+
 Requires:       pattern() = gnome_utilities
 
 # kamarada/Linux-Kamarada-GNOME#4 - GUI - Accessories - Text editor

@@ -65,6 +65,10 @@ Recommends:     gedit-lang
 Requires:       gnome-calculator
 Recommends:     gnome-calculator-lang
 
+# kamarada/Linux-Kamarada-GNOME#10 - GUI - Utilities - Screenshot
+Requires:       gnome-screenshot
+Recommends:     gnome-screenshot-lang
+
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 

@@ -45,6 +45,12 @@ Recommends:     hicolor-icon-theme-branding-openSUSE
 Requires:       nautilus
 Recommends:     nautilus-lang
 
+#Requires:       pattern() = gnome_basic
+
+# kamarada/Linux-Kamarada-GNOME#7 - GUI - Utilities - Archive manager
+Requires:       file-roller
+Recommends:     file-roller-lang
+
 Requires:       pattern() = gnome_utilities
 
 # kamarada/Linux-Kamarada-GNOME#4 - GUI - Accessories - Text editor

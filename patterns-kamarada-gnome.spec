@@ -27,8 +27,8 @@ Requires:       bind-utils
 Requires:       pattern() = x11_enhanced
 
 Requires:       pattern() = gnome_basis
-Requires:       MozillaFirefox
-Recommends:     MozillaFirefox-branding-openSUSE
+#Requires:       MozillaFirefox
+#Recommends:     MozillaFirefox-branding-openSUSE
 Requires:       NetworkManager
 Requires:       NetworkManager-applet
 Recommends:     gdm-branding-openSUSE
@@ -54,6 +54,9 @@ Recommends:     gedit-lang
 # kamarada/Linux-Kamarada-GNOME#3 - GUI - Accessories - Calculator
 Requires:       gnome-calculator
 Recommends:     gnome-calculator-lang
+
+# kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
+Requires:       chromium
 
 
 %description

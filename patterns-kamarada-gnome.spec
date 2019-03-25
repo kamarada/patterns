@@ -58,6 +58,10 @@ Recommends:     gnome-calculator-lang
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 
+# kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
+Requires:       vlc
+Recommends:     vlc-lang
+
 
 %description
 Install this package to have a fully functional Linux Kamarada installation with

@@ -23,6 +23,7 @@ Recommends:     branding-openSUSE
 Requires:       pattern() = enhanced_base
 # dig, host and nslookup
 Requires:       bind-utils
+Requires:       sudo
 
 Requires:       pattern() = x11_enhanced
 

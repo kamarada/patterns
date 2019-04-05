@@ -29,6 +29,11 @@ Requires:       sudo
 
 Requires:       pattern() = x11_enhanced
 
+Requires:       xf86-video-fbdev
+Requires:       xf86-video-vesa
+Requires:       xorg-x11-driver-video
+Requires:       xorg-x11-fonts
+
 Requires:       pattern() = gnome_basis
 #Requires:       MozillaFirefox
 #Recommends:     MozillaFirefox-branding-openSUSE

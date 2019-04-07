@@ -84,6 +84,10 @@ Requires:       chromium
 Requires:       vlc
 Recommends:     vlc-lang
 
+# kamarada/Linux-Kamarada-GNOME#11 - GUI - Internet - E-mail client
+Requires:       evolution
+Recommends:     evolution-lang
+
 
 %description
 Install this package to have a fully functional Linux Kamarada installation with

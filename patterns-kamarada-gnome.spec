@@ -88,6 +88,10 @@ Recommends:     vlc-lang
 Requires:       evolution
 Recommends:     evolution-lang
 
+# kamarada/Linux-Kamarada-GNOME#12 - GUI - Office - Calendar
+Requires:       gnome-calendar
+Recommends:     gnome-calendar-lang
+
 
 %description
 Install this package to have a fully functional Linux Kamarada installation with

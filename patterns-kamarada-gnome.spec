@@ -96,6 +96,9 @@ Recommends:     gnome-calendar-lang
 Requires:       gnome-contacts
 Recommends:     gnome-contacts-lang
 
+# kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite
+Requires:       libreoffice
+
 
 %description
 Install this package to have a fully functional Linux Kamarada installation with

@@ -99,6 +99,10 @@ Recommends:     gnome-contacts-lang
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite
 Requires:       libreoffice
 
+# kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
+Requires:       evince
+Recommends:     evince-lang
+
 
 %description
 Install this package to have a fully functional Linux Kamarada installation with

@@ -92,6 +92,10 @@ Recommends:     evolution-lang
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
 
+# kamarada/Linux-Kamarada-GNOME#13 - GUI - Office - Address book
+Requires:       gnome-contacts
+Recommends:     gnome-contacts-lang
+
 
 %description
 Install this package to have a fully functional Linux Kamarada installation with

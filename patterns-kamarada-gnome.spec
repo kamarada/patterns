@@ -107,6 +107,11 @@ Requires:       libreoffice-math
 
 # kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
 Requires:       evince
+Requires:       evince-plugin-pdfdocument
+Requires:       evince-plugin-xpsdocument
+Requires:       evince-plugin-djvudocument
+Requires:       evince-plugin-tiffdocument
+Requires:       evince-plugin-psdocument
 Recommends:     evince-lang
 
 

@@ -98,6 +98,12 @@ Recommends:     gnome-contacts-lang
 
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite
 Requires:       libreoffice
+Requires:       libreoffice-writer
+Requires:       libreoffice-calc
+Requires:       libreoffice-impress
+Requires:       libreoffice-draw
+Requires:       libreoffice-base
+Requires:       libreoffice-math
 
 # kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
 Requires:       evince

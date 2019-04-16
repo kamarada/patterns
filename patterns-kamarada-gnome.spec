@@ -144,6 +144,9 @@ Requires:       chromium
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
 
+# kamarada/Linux-Kamarada-GNOME#18 - GUI - Sound & Video - Sound recorder
+Requires:       gnome-sound-recorder
+
 Requires:       kernel-default
 
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite

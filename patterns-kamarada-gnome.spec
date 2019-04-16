@@ -16,27 +16,61 @@ Provides:       pattern-visible()
 #Provides:       pattern-icon() = pattern-kamarada-gnome
 Provides:       pattern-order() = 1012
 
-Requires:       kernel-default
-
-Recommends:     branding-openSUSE
+################################################################################
 
 Requires:       pattern() = apparmor
 
+################################################################################
+
+#Requires:       pattern() = base
+
+Recommends:     branding-openSUSE
+
+################################################################################
+
 Requires:       pattern() = enhanced_base
+
 # dig, host and nslookup
 Requires:       bind-utils
+
 Requires:       sudo
 
-Requires:       pattern() = x11_enhanced
+################################################################################
 
-Requires:       xf86-video-fbdev
-Requires:       xf86-video-vesa
+#Requires:       pattern() = x11
+
 Requires:       xorg-x11-driver-video
 Requires:       xorg-x11-fonts
 
-Requires:       pattern() = gnome_basis
+################################################################################
+
+Requires:       pattern() = x11_enhanced
+
 #Requires:       MozillaFirefox
+#Recommends:     MozillaFirefox-translations
 #Recommends:     MozillaFirefox-branding-openSUSE
+
+################################################################################
+
+#Requires:       pattern() = gnome_x11
+
+# kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
+Requires:       evince
+Requires:       evince-plugin-pdfdocument
+Requires:       evince-plugin-xpsdocument
+Requires:       evince-plugin-djvudocument
+Requires:       evince-plugin-tiffdocument
+Requires:       evince-plugin-psdocument
+Recommends:     evince-lang
+
+# kamarada/Linux-Kamarada-GNOME#13 - GUI - Office - Address book
+Requires:       gnome-contacts
+Recommends:     gnome-contacts-lang
+
+################################################################################
+
+Requires:       pattern() = gnome_basis
+
 Requires:       NetworkManager
 Requires:       NetworkManager-applet
 Recommends:     gdm-branding-openSUSE
@@ -53,6 +87,8 @@ Recommends:     hicolor-icon-theme-branding-openSUSE
 Requires:       nautilus
 Recommends:     nautilus-lang
 
+################################################################################
+
 #Requires:       pattern() = gnome_basic
 
 # kamarada/Linux-Kamarada-GNOME#7 - GUI - Utilities - Archive manager
@@ -62,6 +98,16 @@ Recommends:     file-roller-lang
 # kamarada/Linux-Kamarada-GNOME#9 - GUI - Utilities - System monitor
 Requires:       gnome-system-monitor
 Recommends:     gnome-system-monitor-lang
+
+################################################################################
+
+#Requires:       pattern() = gnome_internet
+
+# kamarada/Linux-Kamarada-GNOME#11 - GUI - Internet - E-mail client
+Requires:       evolution
+Recommends:     evolution-lang
+
+################################################################################
 
 Requires:       pattern() = gnome_utilities
 
@@ -77,24 +123,16 @@ Recommends:     gnome-calculator-lang
 Requires:       gnome-screenshot
 Recommends:     gnome-screenshot-lang
 
+################################################################################
+
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
-
-# kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
-Requires:       vlc
-Recommends:     vlc-lang
-
-# kamarada/Linux-Kamarada-GNOME#11 - GUI - Internet - E-mail client
-Requires:       evolution
-Recommends:     evolution-lang
 
 # kamarada/Linux-Kamarada-GNOME#12 - GUI - Office - Calendar
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
 
-# kamarada/Linux-Kamarada-GNOME#13 - GUI - Office - Address book
-Requires:       gnome-contacts
-Recommends:     gnome-contacts-lang
+Requires:       kernel-default
 
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite
 Requires:       libreoffice
@@ -105,14 +143,12 @@ Requires:       libreoffice-draw
 Requires:       libreoffice-base
 Requires:       libreoffice-math
 
-# kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
-Requires:       evince
-Requires:       evince-plugin-pdfdocument
-Requires:       evince-plugin-xpsdocument
-Requires:       evince-plugin-djvudocument
-Requires:       evince-plugin-tiffdocument
-Requires:       evince-plugin-psdocument
-Recommends:     evince-lang
+# kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
+Requires:       vlc
+Recommends:     vlc-lang
+
+Requires:       xf86-video-fbdev
+Requires:       xf86-video-vesa
 
 
 %description

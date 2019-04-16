@@ -103,6 +103,10 @@ Recommends:     gnome-system-monitor-lang
 
 #Requires:       pattern() = gnome_imaging
 
+# kamarada/Linux-Kamarada-GNOME#17 - GUI - Utilities - Image viewer
+Requires:       eog
+Recommends:     eog-lang
+
 # kamarada/Linux-Kamarada-GNOME#16 - GUI - Graphics - Scanning
 Requires:       simple-scan
 Recommends:     simple-scan-lang

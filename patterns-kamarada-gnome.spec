@@ -101,6 +101,14 @@ Recommends:     gnome-system-monitor-lang
 
 ################################################################################
 
+#Requires:       pattern() = gnome_imaging
+
+# kamarada/Linux-Kamarada-GNOME#16 - GUI - Graphics - Scanning
+Requires:       simple-scan
+Recommends:     simple-scan-lang
+
+################################################################################
+
 #Requires:       pattern() = gnome_internet
 
 # kamarada/Linux-Kamarada-GNOME#11 - GUI - Internet - E-mail client

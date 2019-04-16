@@ -54,6 +54,10 @@ Requires:       pattern() = x11_enhanced
 
 #Requires:       pattern() = gnome_x11
 
+# kamarada/Linux-Kamarada-GNOME#19 - GUI - Sound & Video - Webcam application
+Requires:       cheese
+Recommends:     cheese-lang
+
 # kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
 Requires:       evince
 Requires:       evince-plugin-pdfdocument

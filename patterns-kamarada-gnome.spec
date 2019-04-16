@@ -54,6 +54,10 @@ Requires:       pattern() = x11_enhanced
 
 #Requires:       pattern() = gnome_x11
 
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Disk Usage Analyzer (Baobab)
+Requires:       baobab
+Recommends:     baobab-lang
+
 # kamarada/Linux-Kamarada-GNOME#19 - GUI - Sound & Video - Webcam application
 Requires:       cheese
 Recommends:     cheese-lang
@@ -67,9 +71,29 @@ Requires:       evince-plugin-tiffdocument
 Requires:       evince-plugin-psdocument
 Recommends:     evince-lang
 
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Characters
+Requires:       gnome-characters
+Recommends:     gnome-characters-lang
+
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Clocks
+Requires:       gnome-clocks
+Recommends:     gnome-clocks-lang
+
 # kamarada/Linux-Kamarada-GNOME#13 - GUI - Office - Address book
 Requires:       gnome-contacts
 Recommends:     gnome-contacts-lang
+
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Disks (gnome-disk-utility)
+Requires:       gnome-disk-utility
+Recommends:     gnome-disk-utility-lang
+
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Documents
+Requires:       gnome-documents
+Recommends:     gnome-documents-lang
+
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Logs (gnome-logs)
+Requires:       gnome-logs
+Recommends:     gnome-logs-lang
 
 ################################################################################
 
@@ -91,6 +115,10 @@ Recommends:     hicolor-icon-theme-branding-openSUSE
 Requires:       nautilus
 Recommends:     nautilus-lang
 
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Help (Yelp)
+Requires:       yelp
+Recommends:     yelp-lang
+
 ################################################################################
 
 #Requires:       pattern() = gnome_basic
@@ -98,6 +126,10 @@ Recommends:     nautilus-lang
 # kamarada/Linux-Kamarada-GNOME#7 - GUI - Utilities - Archive manager
 Requires:       file-roller
 Recommends:     file-roller-lang
+
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Software
+Requires:       gnome-software
+Recommends:     gnome-software-lang
 
 # kamarada/Linux-Kamarada-GNOME#9 - GUI - Utilities - System monitor
 Requires:       gnome-system-monitor
@@ -114,6 +146,10 @@ Recommends:     eog-lang
 # kamarada/Linux-Kamarada-GNOME#16 - GUI - Graphics - Scanning
 Requires:       simple-scan
 Recommends:     simple-scan-lang
+
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Photos
+Requires:       gnome-photos
+Recommends:     gnome-photos-lang
 
 ################################################################################
 
@@ -139,6 +175,10 @@ Recommends:     gnome-calculator-lang
 Requires:       gnome-screenshot
 Recommends:     gnome-screenshot-lang
 
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Weather
+Requires:       gnome-weather
+Recommends:     gnome-weather-lang
+
 ################################################################################
 
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
@@ -148,8 +188,16 @@ Requires:       chromium
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
 
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Fonts (gnome-font-viewer)
+Requires:       gnome-font-viewer
+Recommends:     gnome-font-viewer-lang
+
 # kamarada/Linux-Kamarada-GNOME#18 - GUI - Sound & Video - Sound recorder
 Requires:       gnome-sound-recorder
+
+# kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - To Do
+Requires:       gnome-todo
+Recommends:     gnome-todo-lang
 
 Requires:       kernel-default
 

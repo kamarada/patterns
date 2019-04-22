@@ -139,6 +139,10 @@ Recommends:     gnome-software-lang
 Requires:       gnome-system-monitor
 Recommends:     gnome-system-monitor-lang
 
+# kamarada/Linux-Kamarada-GNOME#22 - GUI - Utilities - Tweaks
+Requires:       gnome-tweak-tool
+Recommends:     gnome-tweak-tool-lang
+
 ################################################################################
 
 #Requires:       pattern() = gnome_imaging

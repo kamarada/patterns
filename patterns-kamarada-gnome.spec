@@ -145,6 +145,14 @@ Recommends:     gnome-tweak-tool-lang
 
 ################################################################################
 
+#Requires:       pattern() = gnome_games
+
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Mines
+Recommends:     gnome-mines
+Recommends:     gnome-mines-lang
+
+################################################################################
+
 #Requires:       pattern() = gnome_imaging
 
 # kamarada/Linux-Kamarada-GNOME#17 - GUI - Utilities - Image viewer

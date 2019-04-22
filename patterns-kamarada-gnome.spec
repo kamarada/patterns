@@ -58,6 +58,10 @@ Requires:       pattern() = x11_enhanced
 Requires:       baobab
 Recommends:     baobab-lang
 
+# kamarada/Linux-Kamarada-GNOME#21 - GUI - Accessories - Notes
+Requires:       bijiben
+Recommends:     bijiben-lang
+
 # kamarada/Linux-Kamarada-GNOME#19 - GUI - Sound & Video - Webcam application
 Requires:       cheese
 Recommends:     cheese-lang

@@ -189,6 +189,10 @@ Recommends:     gnome-weather-lang
 
 ################################################################################
 
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Aisleriot
+Recommends:     aisleriot
+Recommends:     aisleriot-lang
+
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 

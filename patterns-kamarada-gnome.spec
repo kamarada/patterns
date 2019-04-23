@@ -147,6 +147,10 @@ Recommends:     gnome-tweak-tool-lang
 
 #Requires:       pattern() = gnome_games
 
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Mahjongg
+Recommends:     gnome-mahjongg
+Recommends:     gnome-mahjongg-lang
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Mines
 Recommends:     gnome-mines
 Recommends:     gnome-mines-lang

@@ -150,6 +150,7 @@ Recommends:     gnome-tweak-tool-lang
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Chess
 Recommends:     gnome-chess
 Recommends:     gnome-chess-lang
+Recommends:     gnuchess
 
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Mahjongg
 Recommends:     gnome-mahjongg

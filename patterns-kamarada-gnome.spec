@@ -33,6 +33,10 @@ Requires:       pattern() = enhanced_base
 # dig, host and nslookup
 Requires:       bind-utils
 
+# kamarada/Linux-Kamarada-GNOME#24 - Firewall
+Requires:       firewalld
+Recommends:     firewalld-lang
+
 Requires:       sudo
 
 ################################################################################
@@ -74,6 +78,9 @@ Requires:       evince-plugin-djvudocument
 Requires:       evince-plugin-tiffdocument
 Requires:       evince-plugin-psdocument
 Recommends:     evince-lang
+
+# kamarada/Linux-Kamarada-GNOME#24 - Firewall
+Requires:       firewall-config
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Characters
 Requires:       gnome-characters

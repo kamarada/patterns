@@ -66,6 +66,10 @@ Recommends:     baobab-lang
 Requires:       bijiben
 Recommends:     bijiben-lang
 
+# kamarada/Linux-Kamarada-GNOME#29 - GUI - Sound & Video - CD/DVD burner
+Requires:       brasero
+Recommends:     brasero-lang
+
 # kamarada/Linux-Kamarada-GNOME#19 - GUI - Sound & Video - Webcam application
 Requires:       cheese
 Recommends:     cheese-lang

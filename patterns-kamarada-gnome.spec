@@ -251,6 +251,9 @@ Requires:       gnome-sound-recorder
 Requires:       gnome-todo
 Recommends:     gnome-todo-lang
 
+# kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
+Requires:       imagewriter
+
 Requires:       kernel-default
 
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite

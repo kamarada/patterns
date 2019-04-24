@@ -215,6 +215,11 @@ Recommends:     gnome-photos-lang
 Requires:       evolution
 Recommends:     evolution-lang
 
+# kamarada/Linux-Kamarada-GNOME#30 - GUI - Internet - BitTorrent client
+Requires:       transmission
+Requires:       transmission-gtk
+Recommends:     transmission-gtk-lang
+
 ################################################################################
 
 Requires:       pattern() = gnome_utilities

@@ -106,6 +106,10 @@ Recommends:     gnome-documents-lang
 Requires:       gnome-logs
 Recommends:     gnome-logs-lang
 
+# kamarada/Linux-Kamarada-GNOME#26 - GUI - System - Package updater
+Requires:       gnome-packagekit
+Recommends:     gnome-packagekit-lang
+
 # kamarada/Linux-Kamarada-GNOME#25 - GUI - System - Partition manager
 Requires:       gparted
 Recommends:     gparted-lang

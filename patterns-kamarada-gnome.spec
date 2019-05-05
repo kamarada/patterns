@@ -278,6 +278,9 @@ Requires:       libreoffice-draw
 Requires:       libreoffice-base
 Requires:       libreoffice-math
 
+# kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
+Recommends:     pdfsam-basic
+
 # kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
 Requires:       vlc
 Recommends:     vlc-lang

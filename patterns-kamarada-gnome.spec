@@ -37,7 +37,17 @@ Requires:       bind-utils
 Requires:       firewalld
 Recommends:     firewalld-lang
 
+# kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - JOE
+Requires:       joe
+
+# kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - GNU nano
+Requires:       nano
+Recommends:     nano-lang
+
 Requires:       sudo
+
+# kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
+Requires:       vim
 
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
 Requires:       zip

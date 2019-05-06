@@ -39,6 +39,16 @@ Recommends:     firewalld-lang
 
 Requires:       sudo
 
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+Requires:       zip
+
+################################################################################
+
+#Requires:       pattern() = enhanced_base_opt
+
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+Requires:       unzip
+
 ################################################################################
 
 #Requires:       pattern() = x11

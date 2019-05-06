@@ -51,6 +51,13 @@ Requires:       unzip
 
 ################################################################################
 
+#Requires:       pattern() = minimal_base
+
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       snapper
+
+################################################################################
+
 #Requires:       pattern() = x11
 
 Requires:       xorg-x11-driver-video
@@ -278,6 +285,9 @@ Requires:       gnome-sound-recorder
 Requires:       gnome-todo
 Recommends:     gnome-todo-lang
 
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       grub2-snapper-plugin
+
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
 
@@ -295,12 +305,18 @@ Requires:       libreoffice-math
 # kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
 Recommends:     pdfsam-basic
 
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       snapper-zypp-plugin
+
 # kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
 Requires:       vlc
 Recommends:     vlc-lang
 
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa
+
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       yast2-snapper
 
 
 %description

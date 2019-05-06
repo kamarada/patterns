@@ -140,6 +140,10 @@ Requires:       NetworkManager
 Requires:       NetworkManager-applet
 Recommends:     gdm-branding-openSUSE
 
+# kamarada/Linux-Kamarada-GNOME#33 - GUI - System - Power statistics
+Requires:       gnome-power-manager
+Recommends:     gnome-power-manager-lang
+
 # kamarada/Linux-Kamarada-GNOME#1 - GUI - System - Terminal
 Requires:       gnome-terminal
 Recommends:     gnome-terminal-lang

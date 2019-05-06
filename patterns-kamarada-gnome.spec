@@ -139,6 +139,10 @@ Recommends:     gparted-lang
 Requires:       seahorse
 Recommends:     seahorse-lang
 
+# kamarada/Linux-Kamarada-GNOME#35 - GUI - Utilities - Remote desktop client
+Requires:       vinagre
+Recommends:     vinagre-lang
+
 ################################################################################
 
 Requires:       pattern() = gnome_basis

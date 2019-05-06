@@ -274,6 +274,9 @@ Recommends:     aisleriot-lang
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
+Requires:       gedit-theme-adapta
+
 # kamarada/Linux-Kamarada-GNOME#12 - GUI - Office - Calendar
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
@@ -281,6 +284,9 @@ Recommends:     gnome-calendar-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Fonts (gnome-font-viewer)
 Requires:       gnome-font-viewer
 Recommends:     gnome-font-viewer-lang
+
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
+Requires:       gnome-shell-theme-adapta
 
 # kamarada/Linux-Kamarada-GNOME#18 - GUI - Sound & Video - Sound recorder
 Requires:       gnome-sound-recorder
@@ -291,6 +297,10 @@ Recommends:     gnome-todo-lang
 
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 Requires:       grub2-snapper-plugin
+
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
+Requires:       gtk2-metatheme-adapta
+Requires:       gtk3-metatheme-adapta
 
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
@@ -305,6 +315,9 @@ Requires:       libreoffice-impress
 Requires:       libreoffice-draw
 Requires:       libreoffice-base
 Requires:       libreoffice-math
+
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
+Requires:       papirus-icon-theme
 
 # kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
 Recommends:     pdfsam-basic

@@ -296,6 +296,7 @@ Requires:       gnome-font-viewer
 Recommends:     gnome-font-viewer-lang
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
+Requires:       gnome-shell-extension-user-theme 
 Requires:       gnome-shell-theme-adapta
 
 # kamarada/Linux-Kamarada-GNOME#18 - GUI - Sound & Video - Sound recorder

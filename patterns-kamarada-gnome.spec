@@ -200,6 +200,7 @@ Recommends:     gnome-system-monitor-lang
 # kamarada/Linux-Kamarada-GNOME#22 - GUI - Utilities - Tweaks
 Requires:       gnome-tweak-tool
 Recommends:     gnome-tweak-tool-lang
+Requires:       gsettings-backend-dconf
 
 ################################################################################
 

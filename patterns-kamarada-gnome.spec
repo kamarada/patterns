@@ -181,6 +181,11 @@ Recommends:     nautilus-lang
 Requires:       yelp
 Recommends:     yelp-lang
 
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Branding packages
+Recommends:     gio-branding-kamarada
+Recommends:     gtk2-branding-kamarada
+Recommends:     gtk3-branding-kamarada
+
 ################################################################################
 
 #Requires:       pattern() = gnome_basic

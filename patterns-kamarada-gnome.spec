@@ -173,6 +173,10 @@ Recommends:     gtk2-branding-openSUSE
 Recommends:     gtk3-branding-openSUSE
 Recommends:     hicolor-icon-theme-branding-openSUSE
 
+# we need something for xdg-su
+Requires:       libgnomesu
+Recommends:     libgnomesu-lang
+
 # kamarada/Linux-Kamarada-GNOME#2 - GUI - Accessories - File manager
 Requires:       nautilus
 Recommends:     nautilus-lang

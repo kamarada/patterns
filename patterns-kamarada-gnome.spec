@@ -73,6 +73,10 @@ Requires:       snapper
 Requires:       xorg-x11-driver-video
 Requires:       xorg-x11-fonts
 
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-control-center
+Requires:       yast2-scanner
+
 ################################################################################
 
 Requires:       pattern() = x11_enhanced
@@ -287,6 +291,36 @@ Recommends:     gnome-weather-lang
 
 ################################################################################
 
+#Requires:       pattern() = gnome_yast
+
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-control-center-qt
+
+################################################################################
+
+#Requires:       pattern() = yast2_basis
+
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-country
+Requires:       yast2-metapackage-handler
+Requires:       yast2-network
+Requires:       yast2-packager
+Requires:       yast2-printer
+Requires:       yast2-storage-ng
+Requires:       yast2-sudo
+Requires:       yast2-sysconfig
+Requires:       yast2-theme
+Requires:       yast2-users
+
+################################################################################
+
+#Requires:       pattern() = yast2_install_wf
+
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-bootloader
+
+################################################################################
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Aisleriot
 Recommends:     aisleriot
 Recommends:     aisleriot-lang
@@ -354,6 +388,12 @@ Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa
 
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-proxy
+Suggests:       yast2-trans-en
+Suggests:       yast2-trans-en_US
+Suggests:       yast2-trans-pt
+Suggests:       yast2-trans-pt_BR
 Requires:       yast2-snapper
 
 

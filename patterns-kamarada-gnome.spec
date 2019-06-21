@@ -30,6 +30,9 @@ Recommends:     branding-openSUSE
 
 Requires:       pattern() = enhanced_base
 
+# cnf
+Requires:       command-not-found
+
 # dig, host and nslookup
 Requires:       bind-utils
 
@@ -39,6 +42,8 @@ Recommends:     firewalld-lang
 
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - JOE
 Requires:       joe
+
+Requires:       less
 
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - GNU nano
 Requires:       nano

@@ -162,6 +162,12 @@ Recommends:     seahorse-lang
 Requires:       vinagre
 Recommends:     vinagre-lang
 
+# kamarada/Linux-Kamarada-GNOME#39 - XDG user directories
+Requires:       xdg-user-dirs
+Recommends:     xdg-user-dirs-lang
+Requires:       xdg-user-dirs-gtk
+Recommends:     xdg-user-dirs-gtk-lang
+
 ################################################################################
 
 Requires:       pattern() = gnome_basis

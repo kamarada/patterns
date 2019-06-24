@@ -381,6 +381,8 @@ Requires:       libreoffice-impress
 Requires:       libreoffice-draw
 Requires:       libreoffice-base
 Requires:       libreoffice-math
+Suggests:       libreoffice-l10n-en
+Suggests:       libreoffice-l10n-pt_BR
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
 Requires:       papirus-icon-theme

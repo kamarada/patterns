@@ -384,6 +384,13 @@ Requires:       libreoffice-math
 Suggests:       libreoffice-l10n-en
 Suggests:       libreoffice-l10n-pt_BR
 
+# Spell-checker used by LibreOffice
+Suggests:       myspell-en
+Suggests:       myspell-en_US
+Suggests:       myspell-lightproof-en
+Suggests:       myspell-lightproof-pt_BR
+Suggests:       myspell-pt_BR
+
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
 Requires:       papirus-icon-theme
 

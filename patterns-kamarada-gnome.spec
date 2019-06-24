@@ -51,6 +51,10 @@ Recommends:     nano-lang
 
 Requires:       sudo
 
+# kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
+Recommends:     translation-update
+Suggests:       translation-update-pt_BR
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
 Requires:       vim
 
@@ -184,10 +188,6 @@ Recommends:     gnome-power-manager-lang
 Requires:       gnome-terminal
 Recommends:     gnome-terminal-lang
 
-Recommends:     gtk2-branding-openSUSE
-Recommends:     gtk3-branding-openSUSE
-Recommends:     hicolor-icon-theme-branding-openSUSE
-
 # we need something for xdg-su
 Requires:       libgnomesu
 Recommends:     libgnomesu-lang
@@ -204,6 +204,7 @@ Recommends:     yelp-lang
 Recommends:     gio-branding-kamarada
 Recommends:     gtk2-branding-kamarada
 Recommends:     gtk3-branding-kamarada
+Recommends:     hicolor-icon-theme-branding-openSUSE
 
 ################################################################################
 
@@ -416,6 +417,10 @@ Suggests:       yast2-trans-en_US
 Suggests:       yast2-trans-pt
 Suggests:       yast2-trans-pt_BR
 Requires:       yast2-snapper
+
+# kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
+Recommends:     gtk2-lang
+Recommends:     gtk3-lang
 
 
 %description

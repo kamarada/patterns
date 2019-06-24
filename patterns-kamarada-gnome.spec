@@ -356,6 +356,7 @@ Requires:       gnome-shell-theme-adapta
 
 # kamarada/Linux-Kamarada-GNOME#18 - GUI - Sound & Video - Sound recorder
 Requires:       gnome-sound-recorder
+Recommends:     gnome-sound-recorder-lang
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - To Do
 Requires:       gnome-todo

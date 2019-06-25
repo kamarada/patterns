@@ -376,6 +376,9 @@ Requires:       grub2-snapper-plugin
 Requires:       gtk2-metatheme-adapta
 Requires:       gtk3-metatheme-adapta
 
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - HPLIP
+Suggests:       hplip
+
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
 

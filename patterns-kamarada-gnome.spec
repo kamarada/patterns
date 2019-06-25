@@ -30,11 +30,15 @@ Recommends:     branding-openSUSE
 
 Requires:       pattern() = enhanced_base
 
+# dig, host and nslookup
+Requires:       bind-utils
+
 # cnf
 Requires:       command-not-found
 
-# dig, host and nslookup
-Requires:       bind-utils
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support
+Requires:       cups
+Requires:       cups-client
 
 # kamarada/Linux-Kamarada-GNOME#24 - Firewall
 Requires:       firewalld

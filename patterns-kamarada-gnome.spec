@@ -83,6 +83,8 @@ Requires:       xorg-x11-driver-video
 Requires:       xorg-x11-fonts
 
 # kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       libyui-qt
+Requires:       libyui-qt-pkg
 Requires:       yast2-control-center
 Requires:       yast2-scanner
 

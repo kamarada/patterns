@@ -36,7 +36,7 @@ Requires:       bind-utils
 # cnf
 Requires:       command-not-found
 
-# kamarada/Linux-Kamarada-GNOME#41 - Printing support
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - CUPS
 Requires:       cups
 Requires:       cups-client
 
@@ -404,6 +404,12 @@ Suggests:       myspell-en_US
 Suggests:       myspell-lightproof-en
 Suggests:       myspell-lightproof-pt_BR
 Suggests:       myspell-pt_BR
+
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - OpenPrinting
+Requires:       OpenPrintingPPDs
+Requires:       OpenPrintingPPDs-ghostscript
+Requires:       OpenPrintingPPDs-hpijs
+Requires:       OpenPrintingPPDs-postscript
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
 Requires:       papirus-icon-theme

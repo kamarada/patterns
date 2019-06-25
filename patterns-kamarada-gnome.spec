@@ -164,6 +164,9 @@ Recommends:     gnome-packagekit-lang
 Requires:       gparted
 Recommends:     gparted-lang
 
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - Gutenprint
+Requires:       gutenprint
+
 # kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager
 Requires:       seahorse
 Recommends:     seahorse-lang

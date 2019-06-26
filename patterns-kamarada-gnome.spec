@@ -132,6 +132,10 @@ Recommends:     evince-lang
 # kamarada/Linux-Kamarada-GNOME#24 - Firewall
 Requires:       firewall-config
 
+# kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support
+Requires:       gnome-bluetooth
+Recommends:     gnome-bluetooth-lang
+
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Characters
 Requires:       gnome-characters
 Recommends:     gnome-characters-lang

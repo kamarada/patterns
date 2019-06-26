@@ -424,6 +424,9 @@ Requires:       papirus-icon-theme
 # kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
 Recommends:     pdfsam-basic
 
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
+Requires:       samba-client
+
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 Requires:       snapper-zypp-plugin
 

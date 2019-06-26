@@ -387,6 +387,9 @@ Requires:       imagewriter
 
 Requires:       kernel-default
 
+# Enables many hardware devices (including my Intel Dual Band Wireless-AC 8265)
+Requires:       kernel-firmware
+
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite
 Requires:       libreoffice
 Requires:       libreoffice-writer

@@ -353,6 +353,9 @@ Recommends:     aisleriot-lang
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       coolkey
+
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
 Requires:       gedit-theme-adapta
 
@@ -405,6 +408,10 @@ Requires:       libreoffice-math
 Suggests:       libreoffice-l10n-en
 Suggests:       libreoffice-l10n-pt_BR
 
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       mozilla-nss
+Requires:       mozilla-nss-tools
+
 # Spell-checker used by LibreOffice
 Suggests:       myspell-en
 Suggests:       myspell-en_US
@@ -418,8 +425,17 @@ Requires:       OpenPrintingPPDs-ghostscript
 Requires:       OpenPrintingPPDs-hpijs
 Requires:       OpenPrintingPPDs-postscript
 
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       opensc
+Requires:       pam_pkcs11
+
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
 Requires:       papirus-icon-theme
+
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       pcsc-ccid
+Requires:       pcsc-lite
+Requires:       pcsc-tools
 
 # kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
 Recommends:     pdfsam-basic

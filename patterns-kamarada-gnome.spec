@@ -62,6 +62,8 @@ Suggests:       translation-update-pt_BR
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
 Requires:       vim
 
+Requires:       wget
+
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
 Requires:       zip
 

@@ -242,6 +242,9 @@ Requires:       gnome-tweak-tool
 Recommends:     gnome-tweak-tool-lang
 Requires:       gsettings-backend-dconf
 
+# kamarada/Linux-Kamarada-GNOME#2 - GUI - Accessories - File manager - Open in Terminal
+Requires:       nautilus-extension-terminal
+
 ################################################################################
 
 #Requires:       pattern() = gnome_games

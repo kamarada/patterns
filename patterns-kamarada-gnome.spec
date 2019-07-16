@@ -355,6 +355,8 @@ Requires:       yast2-bootloader
 Recommends:     aisleriot
 Recommends:     aisleriot-lang
 
+Requires:       bash-completion
+
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support - Configuration that automatically enables all bluetooth devices
 Requires:       bluez-auto-enable-devices
 

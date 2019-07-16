@@ -448,6 +448,9 @@ Requires:       pcsc-tools
 # kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
 Recommends:     pdfsam-basic
 
+# kamarada/Linux-Kamarada-GNOME#42 - Bluetooth audio (A2DP/HSP/HFP) support for the PulseAudio sound server
+Requires:       pulseaudio-module-bluetooth
+
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
 Requires:       samba-client
 

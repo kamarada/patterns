@@ -450,6 +450,9 @@ Requires:       pcsc-tools
 # kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
 Recommends:     pdfsam-basic
 
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Plymouth theme
+Recommends:     plymouth-branding-kamarada
+
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth audio (A2DP/HSP/HFP) support for the PulseAudio sound server
 Requires:       pulseaudio-module-bluetooth
 

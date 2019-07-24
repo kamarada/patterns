@@ -193,7 +193,7 @@ Requires:       pattern() = gnome_basis
 
 Requires:       NetworkManager
 Requires:       NetworkManager-applet
-Recommends:     gdm-branding-openSUSE
+Recommends:     gdm-branding-kamarada
 
 # kamarada/Linux-Kamarada-GNOME#33 - GUI - System - Power statistics
 Requires:       gnome-power-manager

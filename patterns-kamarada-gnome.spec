@@ -30,6 +30,9 @@ Recommends:     branding-openSUSE
 
 Requires:       pattern() = enhanced_base
 
+# ll (alias of ls -l)
+Requires:       aaa_base-extras
+
 # dig, host and nslookup
 Requires:       bind-utils
 

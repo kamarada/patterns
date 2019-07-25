@@ -469,6 +469,7 @@ Recommends:     vlc-lang
 # kamarada/Linux-Kamarada-GNOME#44 - Wine
 Requires:       wine
 Recommends:     wine-32bit
+Recommends:     wine-gecko
 
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa

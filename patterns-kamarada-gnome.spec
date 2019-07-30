@@ -344,6 +344,8 @@ Requires:       yast2-sudo
 Requires:       yast2-sysconfig
 Requires:       yast2-theme
 Requires:       yast2-users
+# Without yast2-x11, YaST Firstboot uses the ncurses interface
+Requires:       yast2-x11
 
 ################################################################################
 

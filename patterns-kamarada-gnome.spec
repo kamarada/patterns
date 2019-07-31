@@ -425,6 +425,8 @@ Requires:       libreoffice-impress
 Requires:       libreoffice-draw
 Requires:       libreoffice-base
 Requires:       libreoffice-math
+Requires:       libreoffice-gnome
+Requires:       libreoffice-gtk3
 Suggests:       libreoffice-l10n-en
 Suggests:       libreoffice-l10n-pt_BR
 

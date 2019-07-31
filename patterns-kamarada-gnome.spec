@@ -60,6 +60,7 @@ Requires:       sudo
 
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
 Recommends:     translation-update
+Suggests:       translation-update-en
 Suggests:       translation-update-pt_BR
 
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
@@ -466,6 +467,9 @@ Requires:       samba-client
 
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 Requires:       snapper-zypp-plugin
+
+Suggests:       ucode-amd
+Suggests:       ucode-intel
 
 # kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
 Requires:       vlc

@@ -413,6 +413,10 @@ Requires:       kernel-default
 # Enables many hardware devices (including my Intel Dual Band Wireless-AC 8265)
 Requires:       kernel-firmware
 
+# Make Qt apps look nice on GNOME
+Requires:       libqt5-qtbase-platformtheme-gtk3
+Requires:       libqt5-qtstyleplugins-platformtheme-gtk2
+
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite
 Requires:       libreoffice
 Requires:       libreoffice-writer

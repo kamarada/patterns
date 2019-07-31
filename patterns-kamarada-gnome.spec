@@ -427,6 +427,7 @@ Requires:       libreoffice-base
 Requires:       libreoffice-math
 Requires:       libreoffice-gnome
 Requires:       libreoffice-gtk3
+Recommends:     libreoffice-branding-upstream
 Suggests:       libreoffice-l10n-en
 Suggests:       libreoffice-l10n-pt_BR
 

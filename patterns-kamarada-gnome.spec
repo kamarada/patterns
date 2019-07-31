@@ -345,8 +345,6 @@ Requires:       yast2-sudo
 Requires:       yast2-sysconfig
 Requires:       yast2-theme
 Requires:       yast2-users
-# Without yast2-x11, YaST Firstboot uses the ncurses interface
-Requires:       yast2-x11
 
 ################################################################################
 
@@ -493,11 +491,14 @@ Requires:       xf86-video-vesa
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 # kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
 Requires:       yast2-proxy
+Recommends:     yast2-qt-branding-kamarada
 Suggests:       yast2-trans-en
 Suggests:       yast2-trans-en_US
 Suggests:       yast2-trans-pt
 Suggests:       yast2-trans-pt_BR
 Requires:       yast2-snapper
+# Without yast2-x11, YaST Firstboot uses the ncurses interface
+Requires:       yast2-x11
 
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
 Recommends:     gtk2-lang

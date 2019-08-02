@@ -502,6 +502,7 @@ Requires:       yast2-x11
 
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
 Recommends:     gnome-shell-extension-dash-to-dock-lang
+Recommends:     gnome-shell-extension-topicons-plus-lang
 Recommends:     gtk2-lang
 Recommends:     gtk3-lang
 

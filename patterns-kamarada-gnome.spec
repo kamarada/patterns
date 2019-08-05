@@ -177,6 +177,11 @@ Recommends:     gparted-lang
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Gutenprint
 Requires:       gutenprint
 
+# kamarada/Linux-Kamarada-GNOME#45 - GUI - Internet - Instant messaging client
+Requires:       pidgin
+Requires:       libpurple-plugin-facebook
+Recommends:     libpurple-lang
+
 # kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager
 Requires:       seahorse
 Recommends:     seahorse-lang

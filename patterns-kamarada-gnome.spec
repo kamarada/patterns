@@ -411,6 +411,9 @@ Suggests:       hplip
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
 
+# Open JAR files with Java
+Requires:       java-jar-launcher
+
 Requires:       kernel-default
 
 # Enables many hardware devices (including my Intel Dual Band Wireless-AC 8265)

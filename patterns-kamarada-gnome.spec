@@ -63,6 +63,9 @@ Recommends:     translation-update
 Suggests:       translation-update-en
 Suggests:       translation-update-pt_BR
 
+# lsusb
+Requires:       usbutils
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
 Requires:       vim
 

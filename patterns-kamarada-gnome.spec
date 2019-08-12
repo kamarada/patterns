@@ -81,6 +81,8 @@ Requires:       zip
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
 Requires:       unzip
 
+Requires:       tcpdump
+
 ################################################################################
 
 #Requires:       pattern() = minimal_base

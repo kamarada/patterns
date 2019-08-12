@@ -497,6 +497,7 @@ Recommends:     vlc-lang
 Requires:       wine
 Recommends:     wine-32bit
 Recommends:     wine-gecko
+Recommends:     wine-mono
 
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa

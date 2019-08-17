@@ -56,6 +56,9 @@ Requires:       less
 Requires:       nano
 Recommends:     nano-lang
 
+# Mount NTFS filesystems
+Requires:       ntfs-3g
+
 Requires:       sudo
 
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)

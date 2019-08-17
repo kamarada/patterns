@@ -225,6 +225,9 @@ Recommends:     libgnomesu-lang
 Requires:       nautilus
 Recommends:     nautilus-lang
 
+# kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
+Requires:       samba
+
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Help (Yelp)
 Requires:       yelp
 Recommends:     yelp-lang
@@ -345,11 +348,15 @@ Requires:       yast2-control-center-qt
 #Requires:       pattern() = yast2_basis
 
 # kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+# kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
+Requires:       yast2-auth-client
 Requires:       yast2-country
 Requires:       yast2-metapackage-handler
 Requires:       yast2-network
 Requires:       yast2-packager
 Requires:       yast2-printer
+Requires:       yast2-samba-client
+Requires:       yast2-samba-server
 Requires:       yast2-storage-ng
 Requires:       yast2-sudo
 Requires:       yast2-sysconfig
@@ -481,6 +488,7 @@ Recommends:     plymouth-branding-kamarada
 Requires:       pulseaudio-module-bluetooth
 
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
+# kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
 Requires:       samba-client
 
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery

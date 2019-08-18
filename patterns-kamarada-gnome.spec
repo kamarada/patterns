@@ -136,6 +136,9 @@ Recommends:     brasero-lang
 Requires:       cheese
 Recommends:     cheese-lang
 
+Requires:       dconf-editor
+Recommends:     dconf-editor-lang
+
 # kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
 Requires:       evince
 Requires:       evince-plugin-pdfdocument

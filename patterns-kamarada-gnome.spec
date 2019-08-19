@@ -231,6 +231,8 @@ Recommends:     libgnomesu-lang
 
 # kamarada/Linux-Kamarada-GNOME#2 - GUI - Accessories - File manager
 Requires:       nautilus
+# Notifies when a USB stick is plugged in
+Requires:       gvfs-backends
 Recommends:     nautilus-lang
 
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory

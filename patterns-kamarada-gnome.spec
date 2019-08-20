@@ -400,6 +400,9 @@ Requires:       coolkey
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for installed desktop files
 Recommends:     desktop-translations
 
+# Not really necessary, just in case anyone wants to make openSUSE related artwork
+Recommends:     fifth-leg-font
+
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
 Requires:       gedit-theme-adapta
 

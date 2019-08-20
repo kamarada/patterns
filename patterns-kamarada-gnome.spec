@@ -463,6 +463,10 @@ Recommends:     libreoffice-icon-theme-papirus
 Suggests:       libreoffice-l10n-en
 Suggests:       libreoffice-l10n-pt_BR
 
+# kamarada/Linux-Kamarada-GNOME#47 - GUI - Internet - VoIP softphone
+Requires:       linphone
+Recommends:     liblinphone-lang
+
 # kamarada/Linux-Kamarada-GNOME#43 - Smart card support
 Requires:       mozilla-nss
 Requires:       mozilla-nss-tools

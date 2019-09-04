@@ -59,6 +59,10 @@ Recommends:     nano-lang
 # Mount NTFS filesystems
 Requires:       ntfs-3g
 
+# Utilities for managing processes: pstree, killall and fuser
+Requires:       psmisc
+Recommends:     psmisc-lang
+
 Requires:       sudo
 
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
@@ -436,8 +440,12 @@ Requires:       gtk3-metatheme-adapta
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - HPLIP
 Suggests:       hplip
 
+Requires:       htop
+
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
+
+Requires:       iotop
 
 # Open JAR files with Java
 Requires:       java-jar-launcher

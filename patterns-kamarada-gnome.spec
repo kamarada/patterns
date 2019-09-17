@@ -57,6 +57,8 @@ Requires:       joe
 
 Requires:       less
 
+Requires:       man
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - GNU nano
 Requires:       nano
 Recommends:     nano-lang
@@ -91,6 +93,9 @@ Requires:       zip
 ################################################################################
 
 #Requires:       pattern() = enhanced_base_opt
+
+Requires:       man-pages
+Requires:       man-pages-posix
 
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
 Requires:       unzip

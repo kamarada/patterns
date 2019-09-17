@@ -26,6 +26,11 @@ Requires:       pattern() = apparmor
 
 Recommends:     branding-openSUSE
 
+# kamarada/Linux-Kamarada-GNOME#48 - Time synchronization with NTP
+Requires:       chrony
+
+Recommends:     util-linux-lang
+
 ################################################################################
 
 Requires:       pattern() = enhanced_base
@@ -363,10 +368,12 @@ Requires:       yast2-control-center-qt
 
 # kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
+# kamarada/Linux-Kamarada-GNOME#48 - Time synchronization with NTP
 Requires:       yast2-auth-client
 Requires:       yast2-country
 Requires:       yast2-metapackage-handler
 Requires:       yast2-network
+Requires:       yast2-ntp-client
 Requires:       yast2-packager
 Requires:       yast2-printer
 Requires:       yast2-samba-client

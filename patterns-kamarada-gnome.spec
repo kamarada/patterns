@@ -52,6 +52,9 @@ Requires:       cups-client
 Requires:       firewalld
 Recommends:     firewalld-lang
 
+# Filesystem in Userspace (FUSE)
+Requires:       fuse
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - JOE
 Requires:       joe
 

@@ -538,6 +538,8 @@ Requires:       samba-client
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 Requires:       snapper-zypp-plugin
 
+Requires:       tree
+
 Suggests:       ucode-amd
 Suggests:       ucode-intel
 

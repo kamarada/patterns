@@ -199,6 +199,13 @@ Recommends:     gnome-logs-lang
 # kamarada/Linux-Kamarada-GNOME#26 - GUI - System - Package updater
 Requires:       gnome-packagekit
 Recommends:     gnome-packagekit-lang
+# These are installed by default with openSUSE:
+Requires:       PackageKit
+Requires:       PackageKit-backend-zypp
+Requires:       PackageKit-branding-openSUSE
+Requires:       PackageKit-gstreamer-plugin
+Requires:       PackageKit-gtk3-module
+Recommends:     PackageKit-lang
 
 # kamarada/Linux-Kamarada-GNOME#25 - GUI - System - Partition manager
 Requires:       gparted

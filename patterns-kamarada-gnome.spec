@@ -345,6 +345,13 @@ Recommends:     gnome-photos-lang
 Requires:       evolution
 Recommends:     evolution-lang
 
+# kamarada/Linux-Kamarada-GNOME#53 - GNOME Online Accounts
+Requires:       evolution-ews
+Recommends:     evolution-ews-lang
+Requires:       gnome-control-center-goa
+Requires:       gnome-online-accounts
+Recommends:     gnome-online-accounts-lang
+
 # kamarada/Linux-Kamarada-GNOME#30 - GUI - Internet - BitTorrent client
 Requires:       transmission
 Requires:       transmission-gtk

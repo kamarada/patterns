@@ -66,6 +66,8 @@ Requires:       man
 Requires:       nano
 Recommends:     nano-lang
 
+Requires:       netcat-openbsd
+
 # Mount NTFS filesystems
 Requires:       ntfs-3g
 
@@ -560,6 +562,8 @@ Suggests:       ucode-intel
 # kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
 Requires:       vlc
 Recommends:     vlc-lang
+
+Requires:       whois
 
 # kamarada/Linux-Kamarada-GNOME#44 - Wine
 Requires:       wine

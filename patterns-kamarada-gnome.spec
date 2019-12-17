@@ -307,6 +307,10 @@ Recommends:     gnome-chess
 Recommends:     gnome-chess-lang
 Recommends:     gnuchess
 
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Hearts
+Recommends:     gnome-hearts
+Recommends:     gnome-hearts-lang
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Mahjongg
 Recommends:     gnome-mahjongg
 Recommends:     gnome-mahjongg-lang

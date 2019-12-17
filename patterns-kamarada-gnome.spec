@@ -315,6 +315,10 @@ Recommends:     gnome-mahjongg-lang
 Recommends:     gnome-mines
 Recommends:     gnome-mines-lang
 
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Nibbles
+Recommends:     gnome-nibbles
+Recommends:     gnome-nibbles-lang
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Sudoku
 Recommends:     gnome-sudoku
 Recommends:     gnome-sudoku-lang

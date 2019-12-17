@@ -319,6 +319,10 @@ Recommends:     gnome-mines-lang
 Recommends:     gnome-sudoku
 Recommends:     gnome-sudoku-lang
 
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Iagno
+Recommends:     iagno
+Recommends:     iagno-lang
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Quadrapassel
 Recommends:     quadrapassel
 Recommends:     quadrapassel-lang

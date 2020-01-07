@@ -442,6 +442,9 @@ Requires:       bash-completion
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support - Configuration that automatically enables all bluetooth devices
 Requires:       bluez-auto-enable-devices
 
+# kamarada/Linux-Kamarada-GNOME#55 - Certificado de segurança da AC raiz brasileira (ICP-Brasil)
+Suggests:       ca-certificates-icpbrasil
+
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 

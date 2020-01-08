@@ -170,6 +170,9 @@ Recommends:     evince-lang
 # kamarada/Linux-Kamarada-GNOME#24 - Firewall
 Requires:       firewall-config
 
+# Viewer for certificate files (CRT, PEM)
+Requires:       gcr-viewer
+
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support
 Requires:       gnome-bluetooth
 Recommends:     gnome-bluetooth-lang

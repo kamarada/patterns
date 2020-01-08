@@ -3,7 +3,7 @@
 # https://build.opensuse.org/package/show/openSUSE:Leap:15.0/patterns-gnome
 
 Name:           patterns-kamarada-gnome
-Summary:        Patterns for Linux Kamarada with GNOME desktop
+Summary:        Linux Kamarada with GNOME desktop
 Url:            https://github.com/openSUSE/patterns
 Version:        15.1
 Release:        0
@@ -13,7 +13,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 Provides:       pattern() = kamarada-gnome
 Provides:       pattern-visible()
-#Provides:       pattern-icon() = pattern-kamarada-gnome
+Provides:       pattern-icon() = pattern-kamarada-gnome
 Provides:       pattern-order() = 1012
 
 ################################################################################
@@ -470,6 +470,11 @@ Recommends:     gnome-calendar-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Fonts (gnome-font-viewer)
 Requires:       gnome-font-viewer
 Recommends:     gnome-font-viewer-lang
+
+# GNOME Extensions
+# See: https://kamarada.github.io/en/2019/04/26/monitor-system-resources-with-the-gnome-system-monitor-extension/
+Requires:       gnome-shell-extensions-common
+Requires:       chrome-gnome-shell
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
 Requires:       gnome-shell-extension-user-theme 

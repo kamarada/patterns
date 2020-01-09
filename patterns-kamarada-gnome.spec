@@ -250,6 +250,13 @@ Recommends:     gdm-branding-kamarada
 Requires:       gnome-power-manager
 Recommends:     gnome-power-manager-lang
 
+# GNOME Shell Extensions
+# See: https://kamarada.github.io/en/2019/04/26/monitor-system-resources-with-the-gnome-system-monitor-extension/
+Requires:       gnome-shell-classic
+Requires:       gnome-shell-extensions-common
+Recommends:     gnome-shell-extensions-common-lang
+Requires:       chrome-gnome-shell
+
 # kamarada/Linux-Kamarada-GNOME#1 - GUI - System - Terminal
 Requires:       gnome-terminal
 Recommends:     gnome-terminal-lang
@@ -470,11 +477,6 @@ Recommends:     gnome-calendar-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Fonts (gnome-font-viewer)
 Requires:       gnome-font-viewer
 Recommends:     gnome-font-viewer-lang
-
-# GNOME Extensions
-# See: https://kamarada.github.io/en/2019/04/26/monitor-system-resources-with-the-gnome-system-monitor-extension/
-Requires:       gnome-shell-extensions-common
-Requires:       chrome-gnome-shell
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
 Requires:       gnome-shell-extension-user-theme 

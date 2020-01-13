@@ -380,6 +380,23 @@ Requires:       gnome-control-center-goa
 Requires:       gnome-online-accounts
 Recommends:     gnome-online-accounts-lang
 
+# kamarada/Linux-Kamarada-GNOME#56 - VPN clients
+Requires:       NetworkManager-openconnect
+Requires:       NetworkManager-openconnect-gnome
+Recommends:     NetworkManager-openconnect-lang
+
+Requires:       NetworkManager-openvpn
+Requires:       NetworkManager-openvpn-gnome
+Recommends:     NetworkManager-openvpn-lang
+
+Requires:       NetworkManager-pptp
+Requires:       NetworkManager-pptp-gnome
+Recommends:     NetworkManager-pptp-lang
+
+Requires:       NetworkManager-vpnc
+Requires:       NetworkManager-vpnc-gnome
+Recommends:     NetworkManager-vpnc-lang
+
 # kamarada/Linux-Kamarada-GNOME#30 - GUI - Internet - BitTorrent client
 Requires:       transmission
 Requires:       transmission-gtk

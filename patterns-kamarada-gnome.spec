@@ -16,6 +16,8 @@ Provides:       pattern-visible()
 Provides:       pattern-icon() = pattern-kamarada-gnome
 Provides:       pattern-order() = 1012
 
+Source0:        pattern-kamarada-gnome.svg
+
 ################################################################################
 
 Requires:       pattern() = apparmor
@@ -644,11 +646,14 @@ Install this package to have a fully functional Linux Kamarada installation with
 GNOME desktop.
 
 
-%prep
+%install
 mkdir -p "%{buildroot}/usr/share/doc/packages/patterns"
 i="kamarada-gnome"
 echo "This file marks the pattern $i to be installed." \
     >"%{buildroot}/usr/share/doc/packages/patterns/$i.txt"
+
+mkdir -p %{buildroot}/usr/share/icons/hicolor/scalable/apps/
+cp %{SOURCE0} %{buildroot}/usr/share/icons/hicolor/scalable/apps/
 
 
 %clean
@@ -658,3 +663,7 @@ rm -r -f "$RPM_BUILD_ROOT"
 %files
 %dir /usr/share/doc/packages/patterns
 /usr/share/doc/packages/patterns/kamarada-gnome.txt
+%dir /usr/share/icons/hicolor
+%dir /usr/share/icons/hicolor/scalable
+%dir /usr/share/icons/hicolor/scalable/apps
+/usr/share/icons/hicolor/scalable/apps/pattern-kamarada-gnome.svg

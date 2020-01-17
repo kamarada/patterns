@@ -664,6 +664,6 @@ rm -r -f "$RPM_BUILD_ROOT"
 %dir /usr/share/doc/packages/patterns
 /usr/share/doc/packages/patterns/kamarada-gnome.txt
 %dir /usr/share/icons/hicolor
-%dir /usr/share/icons/hicolor/scalable
-%dir /usr/share/icons/hicolor/scalable/apps
+%dir /usr/share/icons/hicolor/256x256
+%dir /usr/share/icons/hicolor/256x256/apps
 /usr/share/icons/hicolor/256x256/apps/pattern-kamarada-gnome.png

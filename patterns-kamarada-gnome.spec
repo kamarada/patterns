@@ -16,7 +16,7 @@ Provides:       pattern-visible()
 Provides:       pattern-icon() = pattern-kamarada-gnome
 Provides:       pattern-order() = 1012
 
-Source0:        pattern-kamarada-gnome.svg
+Source0:        pattern-kamarada-gnome.png
 
 ################################################################################
 
@@ -652,8 +652,8 @@ i="kamarada-gnome"
 echo "This file marks the pattern $i to be installed." \
     >"%{buildroot}/usr/share/doc/packages/patterns/$i.txt"
 
-mkdir -p %{buildroot}/usr/share/icons/hicolor/scalable/apps/
-cp %{SOURCE0} %{buildroot}/usr/share/icons/hicolor/scalable/apps/
+mkdir -p %{buildroot}/usr/share/icons/hicolor/256x256/apps/
+cp %{SOURCE0} %{buildroot}/usr/share/icons/hicolor/256x256/apps/
 
 
 %clean
@@ -666,4 +666,4 @@ rm -r -f "$RPM_BUILD_ROOT"
 %dir /usr/share/icons/hicolor
 %dir /usr/share/icons/hicolor/scalable
 %dir /usr/share/icons/hicolor/scalable/apps
-/usr/share/icons/hicolor/scalable/apps/pattern-kamarada-gnome.svg
+/usr/share/icons/hicolor/256x256/apps/pattern-kamarada-gnome.png

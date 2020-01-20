@@ -190,6 +190,7 @@ Recommends:     gnome-clocks-lang
 # kamarada/Linux-Kamarada-GNOME#13 - GUI - Office - Address book
 Requires:       gnome-contacts
 Recommends:     gnome-contacts-lang
+Requires:       gnome-shell-search-provider-contacts
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Disks (gnome-disk-utility)
 Requires:       gnome-disk-utility
@@ -262,6 +263,7 @@ Requires:       chrome-gnome-shell
 # kamarada/Linux-Kamarada-GNOME#1 - GUI - System - Terminal
 Requires:       gnome-terminal
 Recommends:     gnome-terminal-lang
+Requires:       gnome-shell-search-provider-gnome-terminal
 
 # we need something for xdg-su
 Requires:       libgnomesu
@@ -272,6 +274,7 @@ Requires:       nautilus
 # Notifies when a USB stick is plugged in
 Requires:       gvfs-backends
 Recommends:     nautilus-lang
+Requires:       gnome-shell-search-provider-nautilus
 
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
 Requires:       samba
@@ -415,6 +418,7 @@ Recommends:     gedit-lang
 # kamarada/Linux-Kamarada-GNOME#3 - GUI - Accessories - Calculator
 Requires:       gnome-calculator
 Recommends:     gnome-calculator-lang
+Requires:       gnome-shell-search-provider-gnome-calculator
 
 # kamarada/Linux-Kamarada-GNOME#10 - GUI - Utilities - Screenshot
 Requires:       gnome-screenshot
@@ -492,6 +496,7 @@ Requires:       gedit-theme-adapta
 # kamarada/Linux-Kamarada-GNOME#12 - GUI - Office - Calendar
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
+Requires:       gnome-shell-search-provider-gnome-calendar
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Fonts (gnome-font-viewer)
 Requires:       gnome-font-viewer

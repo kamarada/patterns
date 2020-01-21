@@ -148,6 +148,7 @@ Recommends:     baobab-lang
 # kamarada/Linux-Kamarada-GNOME#21 - GUI - Accessories - Notes
 Requires:       bijiben
 Recommends:     bijiben-lang
+Requires:       gnome-shell-search-provider-bijiben
 
 # kamarada/Linux-Kamarada-GNOME#29 - GUI - Sound & Video - CD/DVD burner
 Requires:       brasero
@@ -233,6 +234,7 @@ Recommends:     libpurple-lang
 # kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager
 Requires:       seahorse
 Recommends:     seahorse-lang
+Requires:       gnome-shell-search-provider-seahorse
 
 # kamarada/Linux-Kamarada-GNOME#35 - GUI - Utilities - Remote desktop client
 Requires:       vinagre

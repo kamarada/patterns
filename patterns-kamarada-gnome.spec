@@ -417,6 +417,10 @@ Recommends:     transmission-gtk-lang
 
 Requires:       pattern() = gnome_utilities
 
+# kamarada/Linux-Kamarada-GNOME#2 - Thumbnails for images and office documents
+Requires:       gdk-pixbuf-thumbnailer
+Requires:       gsf-office-thumbnailer
+
 # kamarada/Linux-Kamarada-GNOME#4 - GUI - Accessories - Text editor
 Requires:       gedit
 Recommends:     gedit-lang

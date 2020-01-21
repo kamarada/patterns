@@ -182,10 +182,12 @@ Recommends:     gnome-bluetooth-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Characters
 Requires:       gnome-characters
 Recommends:     gnome-characters-lang
+Requires:       gnome-shell-search-provider-gnome-characters
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Clocks
 Requires:       gnome-clocks
 Recommends:     gnome-clocks-lang
+Requires:       gnome-shell-search-provider-gnome-clocks
 
 # kamarada/Linux-Kamarada-GNOME#13 - GUI - Office - Address book
 Requires:       gnome-contacts
@@ -199,6 +201,7 @@ Recommends:     gnome-disk-utility-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Documents
 Requires:       gnome-documents
 Recommends:     gnome-documents-lang
+Requires:       gnome-shell-search-provider-documents
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Logs (gnome-logs)
 Requires:       gnome-logs
@@ -369,6 +372,7 @@ Recommends:     simple-scan-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Photos
 Requires:       gnome-photos
 Recommends:     gnome-photos-lang
+Requires:       gnome-shell-search-provider-gnome-photos
 
 ################################################################################
 
@@ -427,6 +431,7 @@ Recommends:     gnome-screenshot-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Weather
 Requires:       gnome-weather
 Recommends:     gnome-weather-lang
+Requires:       gnome-shell-search-provider-gnome-weather
 
 ################################################################################
 

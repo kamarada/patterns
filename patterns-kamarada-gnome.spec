@@ -594,6 +594,9 @@ Requires:       OpenPrintingPPDs-postscript
 Requires:       opensc
 Requires:       pam_pkcs11
 
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - 7-Zip archives (.7z)
+Requires:       p7zip
+
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
 Requires:       papirus-icon-theme
 

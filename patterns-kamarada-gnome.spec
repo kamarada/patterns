@@ -532,6 +532,9 @@ Requires:       grub2-snapper-plugin
 Requires:       gtk2-metatheme-adapta
 Requires:       gtk3-metatheme-adapta
 
+# kamarada/Linux-Kamarada-GNOME#46 - Browse Windows shared folders using Nautilus
+Requires:       gvfs-backend-samba
+
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - HPLIP
 Suggests:       hplip
 

@@ -94,7 +94,7 @@ Requires:       vim
 
 Requires:       wget
 
-# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives (.zip)
 Requires:       zip
 
 ################################################################################
@@ -104,7 +104,7 @@ Requires:       zip
 Requires:       man-pages
 Requires:       man-pages-posix
 
-# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives (.zip)
 Requires:       unzip
 
 Requires:       tcpdump
@@ -613,6 +613,10 @@ Recommends:     plymouth-branding-kamarada
 
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth audio (A2DP/HSP/HFP) support for the PulseAudio sound server
 Requires:       pulseaudio-module-bluetooth
+
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - RAR files (.rar)
+Recommends:     rar
+Requires:       unrar
 
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory

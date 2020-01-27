@@ -590,6 +590,9 @@ Suggests:       myspell-lightproof-en
 Suggests:       myspell-lightproof-pt_BR
 Suggests:       myspell-pt_BR
 
+# kamarada/Linux-Kamarada-GNOME#20 - GNOME Characters - Emoji font
+Requires:       noto-coloremoji-fonts
+
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - OpenPrinting
 Requires:       OpenPrintingPPDs
 Requires:       OpenPrintingPPDs-ghostscript

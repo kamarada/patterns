@@ -650,6 +650,7 @@ Requires:       wine
 Recommends:     wine-32bit
 Recommends:     wine-gecko
 Recommends:     wine-mono
+Recommends:     python3-icoextract
 
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa

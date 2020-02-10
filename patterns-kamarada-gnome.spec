@@ -62,6 +62,9 @@ Requires:       joe
 
 Requires:       less
 
+# Logical Volume Manager (LVM)
+Requires:       lvm2
+
 Requires:       man
 
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - GNU nano

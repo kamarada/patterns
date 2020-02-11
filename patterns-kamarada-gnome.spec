@@ -559,6 +559,10 @@ Requires:       kernel-default
 # Enables many hardware devices (including my Intel Dual Band Wireless-AC 8265)
 Requires:       kernel-firmware
 
+# kamarada/Linux-Kamarada-GNOME#31 - GUI - Graphics - Drawing
+Requires:       kolourpaint
+Recommends:     kolourpaint-lang
+
 # Make Qt apps look nice on GNOME
 Requires:       libqt5-qtbase-platformtheme-gtk3
 Requires:       libqt5-qtstyleplugins-platformtheme-gtk2

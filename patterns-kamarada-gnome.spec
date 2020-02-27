@@ -5,7 +5,7 @@
 Name:           patterns-kamarada-gnome
 Summary:        Patterns for Linux Kamarada with GNOME desktop
 Url:            https://github.com/openSUSE/patterns
-Version:        15.1
+Version:        15.2
 Release:        0
 Group:          Metapackages
 License:        MIT

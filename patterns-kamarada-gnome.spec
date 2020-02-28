@@ -37,7 +37,34 @@ Requires:       bind-utils
 Requires:       firewalld
 Recommends:     firewalld-lang
 
+# kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - JOE
+Requires:       joe
+
+# kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - GNU nano
+Requires:       nano
+Recommends:     nano-lang
+
 Requires:       sudo
+
+# kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
+Requires:       vim
+
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+Requires:       zip
+
+################################################################################
+
+#Requires:       pattern() = enhanced_base_opt
+
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+Requires:       unzip
+
+################################################################################
+
+#Requires:       pattern() = minimal_base
+
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       snapper
 
 ################################################################################
 
@@ -122,6 +149,10 @@ Recommends:     gparted-lang
 Requires:       seahorse
 Recommends:     seahorse-lang
 
+# kamarada/Linux-Kamarada-GNOME#35 - GUI - Utilities - Remote desktop client
+Requires:       vinagre
+Recommends:     vinagre-lang
+
 ################################################################################
 
 Requires:       pattern() = gnome_basis
@@ -129,6 +160,10 @@ Requires:       pattern() = gnome_basis
 Requires:       NetworkManager
 Requires:       NetworkManager-applet
 Recommends:     gdm-branding-openSUSE
+
+# kamarada/Linux-Kamarada-GNOME#33 - GUI - System - Power statistics
+Requires:       gnome-power-manager
+Recommends:     gnome-power-manager-lang
 
 # kamarada/Linux-Kamarada-GNOME#1 - GUI - System - Terminal
 Requires:       gnome-terminal
@@ -145,6 +180,11 @@ Recommends:     nautilus-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Help (Yelp)
 Requires:       yelp
 Recommends:     yelp-lang
+
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Branding packages
+Recommends:     gio-branding-kamarada
+Recommends:     gtk2-branding-kamarada
+Recommends:     gtk3-branding-kamarada
 
 ################################################################################
 
@@ -165,6 +205,7 @@ Recommends:     gnome-system-monitor-lang
 # kamarada/Linux-Kamarada-GNOME#22 - GUI - Utilities - Tweaks
 Requires:       gnome-tweaks
 Recommends:     gnome-tweaks-lang
+Requires:       gsettings-backend-dconf
 
 ################################################################################
 
@@ -249,6 +290,9 @@ Recommends:     aisleriot-lang
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
+Requires:       gedit-theme-adapta
+
 # kamarada/Linux-Kamarada-GNOME#12 - GUI - Office - Calendar
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
@@ -257,12 +301,23 @@ Recommends:     gnome-calendar-lang
 Requires:       gnome-font-viewer
 Recommends:     gnome-font-viewer-lang
 
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
+Requires:       gnome-shell-extension-user-theme 
+Requires:       gnome-shell-theme-adapta
+
 # kamarada/Linux-Kamarada-GNOME#18 - GUI - Sound & Video - Sound recorder
 Requires:       gnome-sound-recorder
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - To Do
 Requires:       gnome-todo
 Recommends:     gnome-todo-lang
+
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       grub2-snapper-plugin
+
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
+Requires:       gtk2-metatheme-adapta
+Requires:       gtk3-metatheme-adapta
 
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
@@ -278,12 +333,24 @@ Requires:       libreoffice-draw
 Requires:       libreoffice-base
 Requires:       libreoffice-math
 
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
+Requires:       papirus-icon-theme
+
+# kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
+Recommends:     pdfsam-basic
+
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       snapper-zypp-plugin
+
 # kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
 Requires:       vlc
 Recommends:     vlc-lang
 
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa
+
+# kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+Requires:       yast2-snapper
 
 
 %description

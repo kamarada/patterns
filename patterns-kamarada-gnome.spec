@@ -30,8 +30,18 @@ Recommends:     branding-openSUSE
 
 Requires:       pattern() = enhanced_base
 
+# ll (alias of ls -l)
+Requires:       aaa_base-extras
+
 # dig, host and nslookup
 Requires:       bind-utils
+
+# cnf
+Requires:       command-not-found
+
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - CUPS
+Requires:       cups
+Requires:       cups-client
 
 # kamarada/Linux-Kamarada-GNOME#24 - Firewall
 Requires:       firewalld
@@ -40,14 +50,23 @@ Recommends:     firewalld-lang
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - JOE
 Requires:       joe
 
+Requires:       less
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - GNU nano
 Requires:       nano
 Recommends:     nano-lang
 
 Requires:       sudo
 
+# kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
+Recommends:     translation-update
+Suggests:       translation-update-en
+Suggests:       translation-update-pt_BR
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
 Requires:       vim
+
+Requires:       wget
 
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
 Requires:       zip
@@ -72,6 +91,12 @@ Requires:       snapper
 
 Requires:       xorg-x11-driver-video
 Requires:       xorg-x11-fonts
+
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       libyui-qt
+Requires:       libyui-qt-pkg
+Requires:       yast2-control-center
+Requires:       yast2-scanner
 
 ################################################################################
 
@@ -113,6 +138,10 @@ Recommends:     evince-lang
 # kamarada/Linux-Kamarada-GNOME#24 - Firewall
 Requires:       firewall-config
 
+# kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support
+Requires:       gnome-bluetooth
+Recommends:     gnome-bluetooth-lang
+
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Characters
 Requires:       gnome-characters
 Recommends:     gnome-characters-lang
@@ -145,6 +174,9 @@ Recommends:     gnome-packagekit-lang
 Requires:       gparted
 Recommends:     gparted-lang
 
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - Gutenprint
+Requires:       gutenprint
+
 # kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager
 Requires:       seahorse
 Recommends:     seahorse-lang
@@ -153,13 +185,19 @@ Recommends:     seahorse-lang
 Requires:       vinagre
 Recommends:     vinagre-lang
 
+# kamarada/Linux-Kamarada-GNOME#39 - XDG user directories
+Requires:       xdg-user-dirs
+Recommends:     xdg-user-dirs-lang
+Requires:       xdg-user-dirs-gtk
+Recommends:     xdg-user-dirs-gtk-lang
+
 ################################################################################
 
 Requires:       pattern() = gnome_basis
 
 Requires:       NetworkManager
 Requires:       NetworkManager-applet
-Recommends:     gdm-branding-openSUSE
+Recommends:     gdm-branding-kamarada
 
 # kamarada/Linux-Kamarada-GNOME#33 - GUI - System - Power statistics
 Requires:       gnome-power-manager
@@ -169,9 +207,9 @@ Recommends:     gnome-power-manager-lang
 Requires:       gnome-terminal
 Recommends:     gnome-terminal-lang
 
-Recommends:     gtk2-branding-openSUSE
-Recommends:     gtk3-branding-openSUSE
-Recommends:     hicolor-icon-theme-branding-openSUSE
+# we need something for xdg-su
+Requires:       libgnomesu
+Recommends:     libgnomesu-lang
 
 # kamarada/Linux-Kamarada-GNOME#2 - GUI - Accessories - File manager
 Requires:       nautilus
@@ -185,6 +223,7 @@ Recommends:     yelp-lang
 Recommends:     gio-branding-kamarada
 Recommends:     gtk2-branding-kamarada
 Recommends:     gtk3-branding-kamarada
+Recommends:     hicolor-icon-theme-branding-openSUSE
 
 ################################################################################
 
@@ -206,6 +245,9 @@ Recommends:     gnome-system-monitor-lang
 Requires:       gnome-tweaks
 Recommends:     gnome-tweaks-lang
 Requires:       gsettings-backend-dconf
+
+# kamarada/Linux-Kamarada-GNOME#2 - GUI - Accessories - File manager - Open in Terminal
+Requires:       nautilus-extension-terminal
 
 ################################################################################
 
@@ -283,12 +325,50 @@ Recommends:     gnome-weather-lang
 
 ################################################################################
 
+#Requires:       pattern() = gnome_yast
+
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-control-center-qt
+
+################################################################################
+
+#Requires:       pattern() = yast2_basis
+
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-country
+Requires:       yast2-metapackage-handler
+Requires:       yast2-network
+Requires:       yast2-packager
+Requires:       yast2-printer
+Requires:       yast2-storage-ng
+Requires:       yast2-sudo
+Requires:       yast2-sysconfig
+Requires:       yast2-theme
+Requires:       yast2-users
+
+################################################################################
+
+#Requires:       pattern() = yast2_install_wf
+
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-bootloader
+
+################################################################################
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Aisleriot
 Recommends:     aisleriot
 Recommends:     aisleriot-lang
 
+Requires:       bash-completion
+
+# kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support - Configuration that automatically enables all bluetooth devices
+Requires:       bluez-auto-enable-devices
+
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
+
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       coolkey
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
 Requires:       gedit-theme-adapta
@@ -307,6 +387,7 @@ Requires:       gnome-shell-theme-adapta
 
 # kamarada/Linux-Kamarada-GNOME#18 - GUI - Sound & Video - Sound recorder
 Requires:       gnome-sound-recorder
+Recommends:     gnome-sound-recorder-lang
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - To Do
 Requires:       gnome-todo
@@ -319,10 +400,20 @@ Requires:       grub2-snapper-plugin
 Requires:       gtk2-metatheme-adapta
 Requires:       gtk3-metatheme-adapta
 
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - HPLIP
+Suggests:       hplip
+
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
 
 Requires:       kernel-default
+
+# Enables many hardware devices (including my Intel Dual Band Wireless-AC 8265)
+Requires:       kernel-firmware
+
+# Make Qt apps look nice on GNOME
+Requires:       libqt5-qtbase-platformtheme-gtk3
+Requires:       libqt5-qtstyleplugins-platformtheme-gtk2
 
 # kamarada/Linux-Kamarada-GNOME#14 - GUI - Office - Office suite
 Requires:       libreoffice
@@ -332,25 +423,88 @@ Requires:       libreoffice-impress
 Requires:       libreoffice-draw
 Requires:       libreoffice-base
 Requires:       libreoffice-math
+Requires:       libreoffice-gnome
+Requires:       libreoffice-gtk3
+Recommends:     libreoffice-branding-upstream
+Suggests:       libreoffice-l10n-en
+Suggests:       libreoffice-l10n-pt_BR
+
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       mozilla-nss
+Requires:       mozilla-nss-tools
+
+# Spell-checker used by LibreOffice
+Suggests:       myspell-en
+Suggests:       myspell-en_US
+Suggests:       myspell-lightproof-en
+Suggests:       myspell-lightproof-pt_BR
+Suggests:       myspell-pt_BR
+
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - OpenPrinting
+Requires:       OpenPrintingPPDs
+Requires:       OpenPrintingPPDs-ghostscript
+Requires:       OpenPrintingPPDs-hpijs
+Requires:       OpenPrintingPPDs-postscript
+
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       opensc
+Requires:       pam_pkcs11
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
 Requires:       papirus-icon-theme
 
+# kamarada/Linux-Kamarada-GNOME#43 - Smart card support
+Requires:       pcsc-ccid
+Requires:       pcsc-lite
+Requires:       pcsc-tools
+
 # kamarada/Linux-Kamarada-GNOME#32 - GUI - Office - PDFsam
 Recommends:     pdfsam-basic
 
+# kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Plymouth theme
+Recommends:     plymouth-branding-kamarada
+
+# kamarada/Linux-Kamarada-GNOME#42 - Bluetooth audio (A2DP/HSP/HFP) support for the PulseAudio sound server
+Requires:       pulseaudio-module-bluetooth
+
+# kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
+Requires:       samba-client
+
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 Requires:       snapper-zypp-plugin
+
+Suggests:       ucode-amd
+Suggests:       ucode-intel
 
 # kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
 Requires:       vlc
 Recommends:     vlc-lang
 
+# kamarada/Linux-Kamarada-GNOME#44 - Wine
+Requires:       wine
+Recommends:     wine-32bit
+Recommends:     wine-gecko
+
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa
 
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
+# kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+Requires:       yast2-proxy
+Recommends:     yast2-qt-branding-kamarada
+Suggests:       yast2-trans-en
+Suggests:       yast2-trans-en_US
+Suggests:       yast2-trans-pt
+Suggests:       yast2-trans-pt_BR
 Requires:       yast2-snapper
+# Without yast2-x11, YaST Firstboot uses the ncurses interface
+Requires:       yast2-x11
+
+# kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
+Recommends:     gnome-shell-extension-dash-to-dock-lang
+Recommends:     gnome-shell-extension-topicons-plus-lang
+Recommends:     gtk2-lang
+Recommends:     gtk3-lang
 
 
 %description

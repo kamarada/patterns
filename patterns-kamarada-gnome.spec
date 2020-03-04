@@ -56,12 +56,24 @@ Requires:       less
 Requires:       nano
 Recommends:     nano-lang
 
+# Mount NTFS filesystems
+Requires:       ntfs-3g
+
+# Utilities for managing processes: pstree, killall and fuser
+Requires:       psmisc
+Recommends:     psmisc-lang
+
 Requires:       sudo
 
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for Brazilian Portuguese (pt_BR)
 Recommends:     translation-update
 Suggests:       translation-update-en
+Suggests:       translation-update-en_US
+Suggests:       translation-update-pt
 Suggests:       translation-update-pt_BR
+
+# lsusb
+Requires:       usbutils
 
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - Vi and Vim
 Requires:       vim
@@ -77,6 +89,8 @@ Requires:       zip
 
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
 Requires:       unzip
+
+Requires:       tcpdump
 
 ################################################################################
 
@@ -125,6 +139,9 @@ Recommends:     brasero-lang
 # kamarada/Linux-Kamarada-GNOME#19 - GUI - Sound & Video - Webcam application
 Requires:       cheese
 Recommends:     cheese-lang
+
+Requires:       dconf-editor
+Recommends:     dconf-editor-lang
 
 # kamarada/Linux-Kamarada-GNOME#15 - GUI - Utilities - Document viewer
 Requires:       evince
@@ -177,6 +194,11 @@ Recommends:     gparted-lang
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Gutenprint
 Requires:       gutenprint
 
+# kamarada/Linux-Kamarada-GNOME#45 - GUI - Internet - Instant messaging client
+Requires:       pidgin
+Requires:       libpurple-plugin-facebook
+Recommends:     libpurple-lang
+
 # kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager
 Requires:       seahorse
 Recommends:     seahorse-lang
@@ -213,7 +235,12 @@ Recommends:     libgnomesu-lang
 
 # kamarada/Linux-Kamarada-GNOME#2 - GUI - Accessories - File manager
 Requires:       nautilus
+# Notifies when a USB stick is plugged in
+Requires:       gvfs-backends
 Recommends:     nautilus-lang
+
+# kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
+Requires:       samba
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Help (Yelp)
 Requires:       yelp
@@ -335,11 +362,15 @@ Requires:       yast2-control-center-qt
 #Requires:       pattern() = yast2_basis
 
 # kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
+# kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
+Requires:       yast2-auth-client
 Requires:       yast2-country
 Requires:       yast2-metapackage-handler
 Requires:       yast2-network
 Requires:       yast2-packager
 Requires:       yast2-printer
+Requires:       yast2-samba-client
+Requires:       yast2-samba-server
 Requires:       yast2-storage-ng
 Requires:       yast2-sudo
 Requires:       yast2-sysconfig
@@ -369,6 +400,12 @@ Requires:       chromium
 
 # kamarada/Linux-Kamarada-GNOME#43 - Smart card support
 Requires:       coolkey
+
+# kamarada/Linux-Kamarada-GNOME#40 - Translations for installed desktop files
+Recommends:     desktop-translations
+
+# Not really necessary, just in case anyone wants to make openSUSE related artwork
+Recommends:     fifth-leg-font
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
 Requires:       gedit-theme-adapta
@@ -403,8 +440,15 @@ Requires:       gtk3-metatheme-adapta
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - HPLIP
 Suggests:       hplip
 
+Requires:       htop
+
 # kamarada/Linux-Kamarada-GNOME#27 - GUI - System - Image writer
 Requires:       imagewriter
+
+Requires:       iotop
+
+# Open JAR files with Java
+Requires:       java-jar-launcher
 
 Requires:       kernel-default
 
@@ -426,8 +470,13 @@ Requires:       libreoffice-math
 Requires:       libreoffice-gnome
 Requires:       libreoffice-gtk3
 Recommends:     libreoffice-branding-upstream
+Recommends:     libreoffice-icon-theme-papirus
 Suggests:       libreoffice-l10n-en
 Suggests:       libreoffice-l10n-pt_BR
+
+# kamarada/Linux-Kamarada-GNOME#47 - GUI - Internet - VoIP softphone
+Requires:       linphone
+Recommends:     liblinphone-lang
 
 # kamarada/Linux-Kamarada-GNOME#43 - Smart card support
 Requires:       mozilla-nss
@@ -468,6 +517,7 @@ Recommends:     plymouth-branding-kamarada
 Requires:       pulseaudio-module-bluetooth
 
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
+# kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
 Requires:       samba-client
 
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
@@ -484,6 +534,7 @@ Recommends:     vlc-lang
 Requires:       wine
 Recommends:     wine-32bit
 Recommends:     wine-gecko
+Recommends:     wine-mono
 
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa

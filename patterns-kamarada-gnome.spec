@@ -3,7 +3,7 @@
 # https://build.opensuse.org/package/show/openSUSE:Leap:15.0/patterns-gnome
 
 Name:           patterns-kamarada-gnome
-Summary:        Patterns for Linux Kamarada with GNOME desktop
+Summary:        Linux Kamarada with GNOME desktop
 Url:            https://github.com/openSUSE/patterns
 Version:        15.2
 Release:        0
@@ -13,8 +13,10 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 Provides:       pattern() = kamarada-gnome
 Provides:       pattern-visible()
-#Provides:       pattern-icon() = pattern-kamarada-gnome
+Provides:       pattern-icon() = pattern-kamarada-gnome
 Provides:       pattern-order() = 1012
+
+Source0:        pattern-kamarada-gnome.png
 
 ################################################################################
 
@@ -25,6 +27,11 @@ Requires:       pattern() = apparmor
 #Requires:       pattern() = base
 
 Recommends:     branding-openSUSE
+
+# kamarada/Linux-Kamarada-GNOME#48 - Time synchronization with NTP
+Requires:       chrony
+
+Recommends:     util-linux-lang
 
 ################################################################################
 
@@ -47,14 +54,24 @@ Requires:       cups-client
 Requires:       firewalld
 Recommends:     firewalld-lang
 
+# Filesystem in Userspace (FUSE)
+Requires:       fuse
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - JOE
 Requires:       joe
 
 Requires:       less
 
+# Logical Volume Manager (LVM)
+Requires:       lvm2
+
+Requires:       man
+
 # kamarada/Linux-Kamarada-GNOME#37 - CLI - Text editor - GNU nano
 Requires:       nano
 Recommends:     nano-lang
+
+Requires:       netcat-openbsd
 
 # Mount NTFS filesystems
 Requires:       ntfs-3g
@@ -80,14 +97,17 @@ Requires:       vim
 
 Requires:       wget
 
-# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives (.zip)
 Requires:       zip
 
 ################################################################################
 
 #Requires:       pattern() = enhanced_base_opt
 
-# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives
+Requires:       man-pages
+Requires:       man-pages-posix
+
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - Zip archives (.zip)
 Requires:       unzip
 
 Requires:       tcpdump
@@ -131,6 +151,7 @@ Recommends:     baobab-lang
 # kamarada/Linux-Kamarada-GNOME#21 - GUI - Accessories - Notes
 Requires:       bijiben
 Recommends:     bijiben-lang
+Requires:       gnome-shell-search-provider-bijiben
 
 # kamarada/Linux-Kamarada-GNOME#29 - GUI - Sound & Video - CD/DVD burner
 Requires:       brasero
@@ -155,6 +176,9 @@ Recommends:     evince-lang
 # kamarada/Linux-Kamarada-GNOME#24 - Firewall
 Requires:       firewall-config
 
+# Viewer for certificate files (CRT, PEM)
+Requires:       gcr-viewer
+
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support
 Requires:       gnome-bluetooth
 Recommends:     gnome-bluetooth-lang
@@ -162,14 +186,17 @@ Recommends:     gnome-bluetooth-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Characters
 Requires:       gnome-characters
 Recommends:     gnome-characters-lang
+Requires:       gnome-shell-search-provider-gnome-characters
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Clocks
 Requires:       gnome-clocks
 Recommends:     gnome-clocks-lang
+Requires:       gnome-shell-search-provider-gnome-clocks
 
 # kamarada/Linux-Kamarada-GNOME#13 - GUI - Office - Address book
 Requires:       gnome-contacts
 Recommends:     gnome-contacts-lang
+Requires:       gnome-shell-search-provider-contacts
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Disks (gnome-disk-utility)
 Requires:       gnome-disk-utility
@@ -178,6 +205,7 @@ Recommends:     gnome-disk-utility-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Documents
 Requires:       gnome-documents
 Recommends:     gnome-documents-lang
+Requires:       gnome-shell-search-provider-documents
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Logs (gnome-logs)
 Requires:       gnome-logs
@@ -186,6 +214,13 @@ Recommends:     gnome-logs-lang
 # kamarada/Linux-Kamarada-GNOME#26 - GUI - System - Package updater
 Requires:       gnome-packagekit
 Recommends:     gnome-packagekit-lang
+# These are installed by default with openSUSE:
+Requires:       PackageKit
+Requires:       PackageKit-backend-zypp
+Requires:       PackageKit-branding-openSUSE
+Requires:       PackageKit-gstreamer-plugin
+Requires:       PackageKit-gtk3-module
+Recommends:     PackageKit-lang
 
 # kamarada/Linux-Kamarada-GNOME#25 - GUI - System - Partition manager
 Requires:       gparted
@@ -202,6 +237,7 @@ Recommends:     libpurple-lang
 # kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager
 Requires:       seahorse
 Recommends:     seahorse-lang
+Requires:       gnome-shell-search-provider-seahorse
 
 # kamarada/Linux-Kamarada-GNOME#35 - GUI - Utilities - Remote desktop client
 Requires:       vinagre
@@ -225,9 +261,17 @@ Recommends:     gdm-branding-kamarada
 Requires:       gnome-power-manager
 Recommends:     gnome-power-manager-lang
 
+# GNOME Shell Extensions
+# See: https://kamarada.github.io/en/2019/04/26/monitor-system-resources-with-the-gnome-system-monitor-extension/
+Requires:       gnome-shell-classic
+Requires:       gnome-shell-extensions-common
+Recommends:     gnome-shell-extensions-common-lang
+Requires:       chrome-gnome-shell
+
 # kamarada/Linux-Kamarada-GNOME#1 - GUI - System - Terminal
 Requires:       gnome-terminal
 Recommends:     gnome-terminal-lang
+Requires:       gnome-shell-search-provider-gnome-terminal
 
 # we need something for xdg-su
 Requires:       libgnomesu
@@ -238,6 +282,7 @@ Requires:       nautilus
 # Notifies when a USB stick is plugged in
 Requires:       gvfs-backends
 Recommends:     nautilus-lang
+Requires:       gnome-shell-search-provider-nautilus
 
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
 Requires:       samba
@@ -285,6 +330,14 @@ Recommends:     gnome-chess
 Recommends:     gnome-chess-lang
 Recommends:     gnuchess
 
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Games
+Recommends:     gnome-games
+Recommends:     gnome-games-lang
+
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Hearts
+Recommends:     gnome-hearts
+Recommends:     gnome-hearts-lang
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Mahjongg
 Recommends:     gnome-mahjongg
 Recommends:     gnome-mahjongg-lang
@@ -293,9 +346,17 @@ Recommends:     gnome-mahjongg-lang
 Recommends:     gnome-mines
 Recommends:     gnome-mines-lang
 
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Nibbles
+Recommends:     gnome-nibbles
+Recommends:     gnome-nibbles-lang
+
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Sudoku
 Recommends:     gnome-sudoku
 Recommends:     gnome-sudoku-lang
+
+# kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Iagno
+Recommends:     iagno
+Recommends:     iagno-lang
 
 # kamarada/Linux-Kamarada-GNOME#23 - GUI - Games - Quadrapassel
 Recommends:     quadrapassel
@@ -316,6 +377,7 @@ Recommends:     simple-scan-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Photos
 Requires:       gnome-photos
 Recommends:     gnome-photos-lang
+Requires:       gnome-shell-search-provider-gnome-photos
 
 ################################################################################
 
@@ -324,6 +386,30 @@ Recommends:     gnome-photos-lang
 # kamarada/Linux-Kamarada-GNOME#11 - GUI - Internet - E-mail client
 Requires:       evolution
 Recommends:     evolution-lang
+
+# kamarada/Linux-Kamarada-GNOME#53 - GNOME Online Accounts
+Requires:       evolution-ews
+Recommends:     evolution-ews-lang
+Requires:       gnome-control-center-goa
+Requires:       gnome-online-accounts
+Recommends:     gnome-online-accounts-lang
+
+# kamarada/Linux-Kamarada-GNOME#56 - VPN clients
+Requires:       NetworkManager-openconnect
+Requires:       NetworkManager-openconnect-gnome
+Recommends:     NetworkManager-openconnect-lang
+
+Requires:       NetworkManager-openvpn
+Requires:       NetworkManager-openvpn-gnome
+Recommends:     NetworkManager-openvpn-lang
+
+Requires:       NetworkManager-pptp
+Requires:       NetworkManager-pptp-gnome
+Recommends:     NetworkManager-pptp-lang
+
+Requires:       NetworkManager-vpnc
+Requires:       NetworkManager-vpnc-gnome
+Recommends:     NetworkManager-vpnc-lang
 
 # kamarada/Linux-Kamarada-GNOME#30 - GUI - Internet - BitTorrent client
 Requires:       transmission
@@ -334,6 +420,10 @@ Recommends:     transmission-gtk-lang
 
 Requires:       pattern() = gnome_utilities
 
+# kamarada/Linux-Kamarada-GNOME#2 - Thumbnails for images and office documents
+Requires:       gdk-pixbuf-thumbnailer
+Requires:       gsf-office-thumbnailer
+
 # kamarada/Linux-Kamarada-GNOME#4 - GUI - Accessories - Text editor
 Requires:       gedit
 Recommends:     gedit-lang
@@ -341,6 +431,7 @@ Recommends:     gedit-lang
 # kamarada/Linux-Kamarada-GNOME#3 - GUI - Accessories - Calculator
 Requires:       gnome-calculator
 Recommends:     gnome-calculator-lang
+Requires:       gnome-shell-search-provider-gnome-calculator
 
 # kamarada/Linux-Kamarada-GNOME#10 - GUI - Utilities - Screenshot
 Requires:       gnome-screenshot
@@ -349,6 +440,7 @@ Recommends:     gnome-screenshot-lang
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Weather
 Requires:       gnome-weather
 Recommends:     gnome-weather-lang
+Requires:       gnome-shell-search-provider-gnome-weather
 
 ################################################################################
 
@@ -363,10 +455,12 @@ Requires:       yast2-control-center-qt
 
 # kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
+# kamarada/Linux-Kamarada-GNOME#48 - Time synchronization with NTP
 Requires:       yast2-auth-client
 Requires:       yast2-country
 Requires:       yast2-metapackage-handler
 Requires:       yast2-network
+Requires:       yast2-ntp-client
 Requires:       yast2-packager
 Requires:       yast2-printer
 Requires:       yast2-samba-client
@@ -395,6 +489,9 @@ Requires:       bash-completion
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth support - Configuration that automatically enables all bluetooth devices
 Requires:       bluez-auto-enable-devices
 
+# kamarada/Linux-Kamarada-GNOME#55 - Certificado de segurança da AC raiz brasileira (ICP-Brasil)
+Suggests:       ca-certificates-icpbrasil
+
 # kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
 Requires:       chromium
 
@@ -403,6 +500,9 @@ Requires:       coolkey
 
 # kamarada/Linux-Kamarada-GNOME#40 - Translations for installed desktop files
 Recommends:     desktop-translations
+
+# kamarada/Linux-Kamarada-GNOME#2 - Video thumbnails
+Requires:       ffmpegthumbnailer
 
 # Not really necessary, just in case anyone wants to make openSUSE related artwork
 Recommends:     fifth-leg-font
@@ -413,6 +513,7 @@ Requires:       gedit-theme-adapta
 # kamarada/Linux-Kamarada-GNOME#12 - GUI - Office - Calendar
 Requires:       gnome-calendar
 Recommends:     gnome-calendar-lang
+Requires:       gnome-shell-search-provider-gnome-calendar
 
 # kamarada/Linux-Kamarada-GNOME#20 - GUI - GNOME core apps - Fonts (gnome-font-viewer)
 Requires:       gnome-font-viewer
@@ -437,6 +538,9 @@ Requires:       grub2-snapper-plugin
 Requires:       gtk2-metatheme-adapta
 Requires:       gtk3-metatheme-adapta
 
+# kamarada/Linux-Kamarada-GNOME#46 - Browse Windows shared folders using Nautilus
+Requires:       gvfs-backend-samba
+
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - HPLIP
 Suggests:       hplip
 
@@ -454,6 +558,10 @@ Requires:       kernel-default
 
 # Enables many hardware devices (including my Intel Dual Band Wireless-AC 8265)
 Requires:       kernel-firmware
+
+# kamarada/Linux-Kamarada-GNOME#31 - GUI - Graphics - Drawing
+Requires:       kolourpaint
+Recommends:     kolourpaint-lang
 
 # Make Qt apps look nice on GNOME
 Requires:       libqt5-qtbase-platformtheme-gtk3
@@ -489,6 +597,9 @@ Suggests:       myspell-lightproof-en
 Suggests:       myspell-lightproof-pt_BR
 Suggests:       myspell-pt_BR
 
+# kamarada/Linux-Kamarada-GNOME#20 - GNOME Characters - Emoji font
+Requires:       noto-coloremoji-fonts
+
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - OpenPrinting
 Requires:       OpenPrintingPPDs
 Requires:       OpenPrintingPPDs-ghostscript
@@ -498,6 +609,9 @@ Requires:       OpenPrintingPPDs-postscript
 # kamarada/Linux-Kamarada-GNOME#43 - Smart card support
 Requires:       opensc
 Requires:       pam_pkcs11
+
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - 7-Zip archives (.7z)
+Requires:       p7zip
 
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Papirus icon theme
 Requires:       papirus-icon-theme
@@ -516,12 +630,18 @@ Recommends:     plymouth-branding-kamarada
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth audio (A2DP/HSP/HFP) support for the PulseAudio sound server
 Requires:       pulseaudio-module-bluetooth
 
+# kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - RAR files (.rar)
+Recommends:     rar
+Requires:       unrar
+
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory
 Requires:       samba-client
 
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 Requires:       snapper-zypp-plugin
+
+Requires:       tree
 
 Suggests:       ucode-amd
 Suggests:       ucode-intel
@@ -530,11 +650,14 @@ Suggests:       ucode-intel
 Requires:       vlc
 Recommends:     vlc-lang
 
+Requires:       whois
+
 # kamarada/Linux-Kamarada-GNOME#44 - Wine
 Requires:       wine
 Recommends:     wine-32bit
 Recommends:     wine-gecko
 Recommends:     wine-mono
+Recommends:     python3-icoextract
 
 Requires:       xf86-video-fbdev
 Requires:       xf86-video-vesa
@@ -563,11 +686,14 @@ Install this package to have a fully functional Linux Kamarada installation with
 GNOME desktop.
 
 
-%prep
+%install
 mkdir -p "%{buildroot}/usr/share/doc/packages/patterns"
 i="kamarada-gnome"
 echo "This file marks the pattern $i to be installed." \
     >"%{buildroot}/usr/share/doc/packages/patterns/$i.txt"
+
+mkdir -p %{buildroot}/usr/share/icons/hicolor/256x256/apps/
+cp %{SOURCE0} %{buildroot}/usr/share/icons/hicolor/256x256/apps/
 
 
 %clean
@@ -577,3 +703,7 @@ rm -r -f "$RPM_BUILD_ROOT"
 %files
 %dir /usr/share/doc/packages/patterns
 /usr/share/doc/packages/patterns/kamarada-gnome.txt
+%dir /usr/share/icons/hicolor
+%dir /usr/share/icons/hicolor/256x256
+%dir /usr/share/icons/hicolor/256x256/apps
+/usr/share/icons/hicolor/256x256/apps/pattern-kamarada-gnome.png

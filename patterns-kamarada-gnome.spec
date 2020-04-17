@@ -239,10 +239,6 @@ Requires:       seahorse
 Recommends:     seahorse-lang
 Requires:       gnome-shell-search-provider-seahorse
 
-# kamarada/Linux-Kamarada-GNOME#35 - GUI - Utilities - Remote desktop client
-Requires:       vinagre
-Recommends:     vinagre-lang
-
 # kamarada/Linux-Kamarada-GNOME#39 - XDG user directories
 Requires:       xdg-user-dirs
 Recommends:     xdg-user-dirs-lang
@@ -632,6 +628,13 @@ Requires:       pulseaudio-module-bluetooth
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - RAR files (.rar)
 Recommends:     rar
 Requires:       unrar
+
+# kamarada/Linux-Kamarada-GNOME#35 - GUI - Utilities - Remote desktop client
+Requires:       remmina
+Requires:       remmina-plugin-rdp
+Requires:       remmina-plugin-secret
+Requires:       remmina-plugin-vnc
+Recommends:     remmina-lang
 
 # kamarada/Linux-Kamarada-GNOME#41 - Printing support - Samba client
 # kamarada/Linux-Kamarada-GNOME#46 - Support to Windows networks and Active Directory

@@ -136,9 +136,10 @@ Requires:       yast2-scanner
 
 Requires:       pattern() = x11_enhanced
 
-#Requires:       MozillaFirefox
-#Recommends:     MozillaFirefox-translations
-#Recommends:     MozillaFirefox-branding-openSUSE
+# kamarada/Linux-Kamarada-GNOME#5 - GUI - Internet - Web browser
+Requires:       MozillaFirefox
+Recommends:     MozillaFirefox-translations
+Recommends:     MozillaFirefox-branding-openSUSE
 
 ################################################################################
 

@@ -669,8 +669,6 @@ Requires:       xf86-video-vesa
 # kamarada/Linux-Kamarada-GNOME#38 - GUI - System - YaST
 Requires:       yast2-proxy
 Recommends:     yast2-qt-branding-kamarada
-Suggests:       yast2-trans-en
-Suggests:       yast2-trans-en_US
 Suggests:       yast2-trans-pt
 Suggests:       yast2-trans-pt_BR
 Requires:       yast2-snapper

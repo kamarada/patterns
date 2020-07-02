@@ -648,6 +648,7 @@ Suggests:       ucode-intel
 # kamarada/Linux-Kamarada-GNOME#6 - GUI - Sound & Video - Media player
 Requires:       vlc
 Recommends:     vlc-lang
+Recommends:     vlc-codecs
 
 Requires:       whois
 

@@ -592,6 +592,8 @@ Suggests:       myspell-lightproof-en
 Suggests:       myspell-lightproof-pt_BR
 Suggests:       myspell-pt_BR
 
+Requires:       nmap
+
 # kamarada/Linux-Kamarada-GNOME#20 - GNOME Characters - Emoji font
 Requires:       noto-coloremoji-fonts
 

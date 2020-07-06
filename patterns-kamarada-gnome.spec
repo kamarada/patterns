@@ -238,7 +238,7 @@ Requires:       pidgin
 Requires:       libpurple-plugin-facebook
 Recommends:     libpurple-lang
 
-# kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager
+# kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager - GNOME Passwords and Keys (Seahorse)
 Requires:       seahorse
 Recommends:     seahorse-lang
 Requires:       gnome-shell-search-provider-seahorse
@@ -555,6 +555,10 @@ Requires:       iotop
 
 # Open JAR files with Java
 Requires:       java-jar-launcher
+
+# kamarada/Linux-Kamarada-GNOME#28 - GUI - Utilities - Password manager - KeePassXC
+Requires:       keepassxc
+Recommends:     keepassxc-lang
 
 Requires:       kernel-default
 

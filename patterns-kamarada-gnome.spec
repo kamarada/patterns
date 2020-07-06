@@ -114,6 +114,7 @@ Requires:       man-pages-posix
 Requires:       unzip
 
 Requires:       tcpdump
+Requires:       telnet
 
 ################################################################################
 

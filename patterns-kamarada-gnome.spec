@@ -35,6 +35,13 @@ Recommends:     util-linux-lang
 
 ################################################################################
 
+#Requires:       pattern() = console
+
+# kamarada/Linux-Kamarada-GNOME#59 - CLI - Web browser - Links
+Requires:       links
+
+################################################################################
+
 Requires:       pattern() = enhanced_base
 
 # ll (alias of ls -l)

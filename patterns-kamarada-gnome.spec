@@ -654,6 +654,9 @@ Requires:       samba-client
 # kamarada/Linux-Kamarada-GNOME#34 - GUI - System - System recovery
 Requires:       snapper-zypp-plugin
 
+# kamarada/Linux-Kamarada-GNOME#60 - Tor support
+Requires:       tor
+
 Requires:       tree
 
 Suggests:       ucode-amd

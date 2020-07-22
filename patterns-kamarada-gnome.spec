@@ -510,6 +510,9 @@ Requires:       ffmpegthumbnailer
 # Not really necessary, just in case anyone wants to make openSUSE related artwork
 Recommends:     fifth-leg-font
 
+# exFAT support
+Requires:       fuse-exfat
+
 # kamarada/Linux-Kamarada-GNOME#36 - GUI - Artwork for 15.1 - Adapta GTK theme
 Requires:       gedit-theme-adapta
 

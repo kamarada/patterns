@@ -127,6 +127,8 @@ Requires:       snapper
 
 #Requires:       pattern() = x11
 
+Requires:       openssh-askpass-gnome
+
 Requires:       xorg-x11-driver-video
 Requires:       xorg-x11-fonts
 

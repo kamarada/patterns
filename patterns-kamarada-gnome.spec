@@ -472,6 +472,7 @@ Requires:       yast2-storage-ng
 Requires:       yast2-sudo
 Requires:       yast2-sysconfig
 Requires:       yast2-theme
+Requires:       yast2-tune
 Requires:       yast2-users
 
 ################################################################################

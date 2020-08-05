@@ -641,6 +641,9 @@ Recommends:     plymouth-branding-kamarada
 
 # kamarada/Linux-Kamarada-GNOME#42 - Bluetooth audio (A2DP/HSP/HFP) support for the PulseAudio sound server
 Requires:       pulseaudio-module-bluetooth
+# The following package ensures Bluetooth headsets are not stolen by gdm pulseaudio instance
+# See: https://wiki.archlinux.org/index.php/Bluetooth_headset#Gnome_with_GDM
+Requires:       pulseaudio-gdm-hooks
 
 # kamarada/Linux-Kamarada-GNOME#8 - CLI - Archiving programs - RAR files (.rar)
 Recommends:     rar

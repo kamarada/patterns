@@ -590,7 +590,7 @@ Requires:       libreoffice-base
 Requires:       libreoffice-math
 Requires:       libreoffice-gnome
 Requires:       libreoffice-gtk3
-Recommends:     libreoffice-branding-upstream
+Recommends:     libreoffice-branding-kamarada
 Recommends:     libreoffice-icon-theme-papirus
 Suggests:       libreoffice-l10n-en
 Suggests:       libreoffice-l10n-pt_BR
